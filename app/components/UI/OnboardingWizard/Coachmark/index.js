@@ -14,7 +14,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     coachmark: {
       backgroundColor: colors.primary.default,
-      borderRadius: 8,
+      borderRadius: 0,
       padding: 18,
     },
     progress: {
@@ -102,7 +102,7 @@ const createStyles = (colors) =>
     circle: {
       width: 6,
       height: 6,
-      borderRadius: 6 / 2,
+      borderRadius: 0,
       backgroundColor: colors.primary.inverse,
       opacity: 0.4,
       margin: 3,

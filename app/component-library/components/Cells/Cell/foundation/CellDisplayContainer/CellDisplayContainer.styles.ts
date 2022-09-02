@@ -26,7 +26,7 @@ const styleSheet = (params: {
     base: Object.assign(
       {
         padding: 16,
-        borderRadius: 4,
+        borderRadius: 0,
         backgroundColor: colors.background.default,
         borderWidth: 1,
         borderColor: colors.border.default,

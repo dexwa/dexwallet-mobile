@@ -82,7 +82,7 @@ const createStyles = (colors) =>
     },
     picker: {
       borderColor: colors.border.default,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 2,
       marginTop: 16,
     },
@@ -120,12 +120,12 @@ const createStyles = (colors) =>
     blockie: {
       height: diameter,
       width: diameter,
-      borderRadius: diameter / 2,
+      borderRadius: 0,
     },
     border: {
       height: diameter + spacing,
       width: diameter + spacing,
-      borderRadius: (diameter + spacing) / 2,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       borderWidth: 2,
       borderColor: colors.background.default,
@@ -311,7 +311,25 @@ class Settings extends PureComponent {
     return (
       <ScrollView style={styles.wrapper}>
         <View style={styles.inner}>
-          <View style={[styles.setting, styles.firstSetting]}>
+        <View style={[styles.setting, styles.firstSetting]}>
+            <Text style={styles.title}>
+              {strings('app_settings.current_language')}
+            </Text>
+            <Text style={styles.desc}>
+              {strings('app_settings.language_desc')}
+            </Text>
+            <View style={styles.picker}>
+              {this.languageOptions && (
+                <SelectComponent
+                  selectedValue={this.state.currentLanguage}
+                  onValueChange={this.selectLanguage}
+                  label={strings('app_settings.current_language')}
+                  options={this.languageOptions}
+                />
+              )}
+            </View>
+          </View>
+          <View style={[styles.setting]}>
             <Text style={styles.title}>
               {strings('app_settings.conversion_title')}
             </Text>
@@ -347,24 +365,6 @@ class Settings extends PureComponent {
                   )}
                   valueSecond={'Fiat'}
                   selectedValue={primaryCurrency}
-                />
-              )}
-            </View>
-          </View>
-          <View style={styles.setting}>
-            <Text style={styles.title}>
-              {strings('app_settings.current_language')}
-            </Text>
-            <Text style={styles.desc}>
-              {strings('app_settings.language_desc')}
-            </Text>
-            <View style={styles.picker}>
-              {this.languageOptions && (
-                <SelectComponent
-                  selectedValue={this.state.currentLanguage}
-                  onValueChange={this.selectLanguage}
-                  label={strings('app_settings.current_language')}
-                  options={this.languageOptions}
                 />
               )}
             </View>
@@ -408,7 +408,7 @@ class Settings extends PureComponent {
               />
             </View>
           </View>
-          <View style={styles.setting}>
+          {/* <View style={styles.setting}>
             <Text style={styles.title}>
               {strings('app_settings.accounts_identicon_title')}
             </Text>
@@ -456,7 +456,7 @@ class Settings extends PureComponent {
                 </Text>
               </TouchableOpacity>
             </View>
-          </View>
+          </View> */}
           {/* {this.renderThemeSettingsSection()} */}
         </View>
       </ScrollView>

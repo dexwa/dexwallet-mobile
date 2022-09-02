@@ -36,7 +36,7 @@ const createStyles = (colors) =>
     networkIcon: {
       width: 20,
       height: 20,
-      borderRadius: 10,
+      borderRadius: 0,
       marginTop: 2,
       marginRight: 16,
     },
@@ -66,7 +66,7 @@ const createStyles = (colors) =>
       alignItems: 'center',
       paddingHorizontal: 10,
       paddingVertical: 10,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
       color: colors.text.default,

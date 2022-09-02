@@ -14,8 +14,8 @@ const createStyles = (colors) =>
     root: {
       backgroundColor: colors.background.default,
       paddingTop: 24,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       minHeight: 200,
       paddingBottom: Device.isIphoneX() ? 20 : 0,
     },
@@ -51,7 +51,7 @@ const createStyles = (colors) =>
     networkIcon: {
       width: 13,
       height: 13,
-      borderRadius: 100,
+      borderRadius: 0,
       marginRight: 10,
       marginTop: 1,
     },
@@ -66,7 +66,7 @@ const createStyles = (colors) =>
     networkBadge: {
       flexDirection: 'row',
       borderColor: colors.border.default,
-      borderRadius: 100,
+      borderRadius: 0,
       borderWidth: 1,
       padding: 10,
     },

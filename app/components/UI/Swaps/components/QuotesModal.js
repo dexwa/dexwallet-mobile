@@ -36,7 +36,7 @@ const createStyles = (colors) =>
       justifyContent: 'center',
       alignItems: 'center',
       marginVertical: 50,
-      borderRadius: 10,
+      borderRadius: 0,
       shadowColor: importedColors.black,
       shadowOffset: {
         width: 0,
@@ -123,7 +123,7 @@ const createStyles = (colors) =>
       paddingVertical: 0,
       paddingHorizontal: 8,
       backgroundColor: colors.primary.default,
-      borderRadius: 4,
+      borderRadius: 0,
     },
     bestBadgeText: {
       color: colors.primary.inverse,

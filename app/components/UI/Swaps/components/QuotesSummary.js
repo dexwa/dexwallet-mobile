@@ -14,8 +14,8 @@ const createStyles = (colors) =>
       paddingHorizontal: 15,
       borderWidth: 1,
       borderColor: colors.primary.default,
-      borderTopRightRadius: 10,
-      borderTopLeftRadius: 10,
+      borderTopRightRadius: 0,
+      borderTopLeftRadius: 0,
       backgroundColor: colors.primary.muted,
     },
     headerWithPiggy: {
@@ -46,8 +46,8 @@ const createStyles = (colors) =>
       borderWidth: 1,
       borderTopWidth: 0,
       borderColor: colors.primary.default,
-      borderBottomRightRadius: 10,
-      borderBottomLeftRadius: 10,
+      borderBottomRightRadius: 0,
+      borderBottomLeftRadius: 0,
     },
     separator: {
       height: 0,

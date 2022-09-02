@@ -61,7 +61,7 @@ const createStyles = (colors) =>
     },
     tabWrapper: {
       marginBottom: 15,
-      borderRadius: 10,
+      borderRadius: 0,
       elevation: 8,
       justifyContent: 'space-evenly',
       overflow: 'hidden',

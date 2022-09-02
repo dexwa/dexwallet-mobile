@@ -10,7 +10,7 @@ const createStyles = (colors) =>
     tabIcon: {
       borderWidth: 2,
       borderColor: colors.text.alternative,
-      borderRadius: 6,
+      borderRadius: 0,
       alignItems: 'center',
       justifyContent: 'center',
     },

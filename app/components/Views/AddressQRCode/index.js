@@ -39,7 +39,7 @@ const createStyles = (colors) =>
       justifyContent: 'center',
       padding: 28,
       backgroundColor: colors.background.default,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     qrCode: {
       padding: 8,
@@ -49,7 +49,7 @@ const createStyles = (colors) =>
       alignItems: 'center',
       justifyContent: 'center',
       width: WIDTH,
-      borderRadius: 8,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       paddingVertical: 12,
     },

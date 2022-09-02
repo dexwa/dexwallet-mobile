@@ -28,7 +28,7 @@ const styleSheet = (params: {
       ? {
           width: 20,
           height: 20,
-          borderRadius: 20 / 2,
+          borderRadius: 0,
         }
       : {};
 
@@ -60,7 +60,7 @@ const styleSheet = (params: {
       justifyContent: 'center',
       alignItems: 'center',
       overflow: 'hidden',
-      borderRadius: haloSize / 2,
+      borderRadius: 0,
     },
     label: size === AvatarBaseSize.Xs ? { lineHeight: 16 } : {},
     image: {

@@ -155,7 +155,7 @@ const createStyles = (colors) =>
       borderWidth: 1,
       borderColor: colors.border.default,
       padding: 10,
-      borderRadius: 6,
+      borderRadius: 0,
       fontSize: 14,
       height: 50,
       ...fontStyles.normal,

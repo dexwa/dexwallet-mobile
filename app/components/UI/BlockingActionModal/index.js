@@ -17,7 +17,7 @@ const createStyles = (colors) =>
       alignSelf: 'center',
       backgroundColor: colors.background.default,
       width: '90%',
-      borderRadius: 6,
+      borderRadius: 0,
       minHeight: 200,
       padding: 15,
     },

@@ -104,7 +104,7 @@ const createStyles = (colors) =>
     },
     timerWrapper: {
       backgroundColor: colors.background.alternative,
-      borderRadius: 20,
+      borderRadius: 0,
       marginVertical: 12,
       paddingVertical: 4,
       paddingHorizontal: 15,
@@ -2132,7 +2132,7 @@ function SwapsQuotesView({
       <InfoModal
         isVisible={isFeeModalVisible}
         toggleModal={toggleFeeModal}
-        title={strings('swaps.metamask_swap_fee')}
+        title={strings('swaps.dexwallet_swap_fee')}
         body={
           <Text style={styles.text}>
             {strings('swaps.fee_text.get_the')}{' '}

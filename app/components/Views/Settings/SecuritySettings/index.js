@@ -54,7 +54,7 @@ import HintModal from '../../../UI/HintModal';
 import AnalyticsV2, {
   trackErrorAsAnalytics,
 } from '../../../../util/analyticsV2';
-import SeedPhraseVideo from '../../../UI/SeedPhraseVideo';
+// import SeedPhraseVideo from '../../../UI/SeedPhraseVideo';
 import { useTheme, ThemeContext, mockTheme } from '../../../../util/theme';
 import {
   CHANGE_PASSWORD_TITLE_ID,
@@ -63,7 +63,7 @@ import {
 } from '../../../../constants/test-ids';
 import ClearCookiesSection from './Sections/ClearCookiesSection';
 import { LEARN_MORE_URL } from '../../../../constants/urls';
-import DeleteMetaMetricsData from './Sections/DeleteMetaMetricsData';
+// import DeleteMetaMetricsData from './Sections/DeleteMetaMetricsData';
 import DeleteWalletData from './Sections/DeleteWalletData';
 import RememberMeOptionSection from './Sections/RememberMeOptionSection';
 import AutomaticSecurityChecks from './Sections/AutomaticSecurityChecks';
@@ -152,7 +152,7 @@ const createStyles = (colors) =>
     },
     picker: {
       borderColor: colors.border.default,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 2,
       marginTop: 16,
     },
@@ -674,7 +674,7 @@ class Settings extends PureComponent {
           </Text>
         </Text>
 
-        <SeedPhraseVideo onClose={this.onBack} />
+        {/* <SeedPhraseVideo onClose={this.onBack} /> */}
 
         <Text style={styles.desc}>
           {strings(
@@ -945,35 +945,35 @@ class Settings extends PureComponent {
     );
   };
 
-  renderMetaMetricsSection = () => {
-    const { analyticsEnabled } = this.state;
-    const { styles, colors } = this.getStyles();
+  // renderMetaMetricsSection = () => {
+  //   const { analyticsEnabled } = this.state;
+  //   const { styles, colors } = this.getStyles();
 
-    return (
-      <View style={styles.setting} testID={'metametrics-section'}>
-        <Text style={styles.title}>
-          {strings('app_settings.metametrics_title')}
-        </Text>
-        <Text style={styles.desc}>
-          {strings('app_settings.metametrics_description')}
-        </Text>
-        <View style={styles.switchElement}>
-          <Switch
-            value={analyticsEnabled}
-            onValueChange={this.toggleMetricsOptIn}
-            trackColor={{
-              true: colors.primary.default,
-              false: colors.border.muted,
-            }}
-            thumbColor={importedColors.white}
-            style={styles.switch}
-            ios_backgroundColor={colors.border.muted}
-            testID={'metametrics-switch'}
-          />
-        </View>
-      </View>
-    );
-  };
+  //   return (
+  //     <View style={styles.setting} testID={'metametrics-section'}>
+  //       <Text style={styles.title}>
+  //         {strings('app_settings.metametrics_title')}
+  //       </Text>
+  //       <Text style={styles.desc}>
+  //         {strings('app_settings.metametrics_description')}
+  //       </Text>
+  //       <View style={styles.switchElement}>
+  //         <Switch
+  //           value={analyticsEnabled}
+  //           onValueChange={this.toggleMetricsOptIn}
+  //           trackColor={{
+  //             true: colors.primary.default,
+  //             false: colors.border.muted,
+  //           }}
+  //           thumbColor={importedColors.white}
+  //           style={styles.switch}
+  //           ios_backgroundColor={colors.border.muted}
+  //           testID={'metametrics-switch'}
+  //         />
+  //       </View>
+  //     </View>
+  //   );
+  // };
 
   renderThirdPartySection = () => {
     const { thirdPartyApiMode } = this.props;
@@ -1145,8 +1145,8 @@ class Settings extends PureComponent {
           {this.renderClearBrowserHistorySection()}
           <ClearCookiesSection />
           {this.renderPrivacyModeSection()}
-          {this.renderMetaMetricsSection()}
-          <DeleteMetaMetricsData />
+          {/* {this.renderMetaMetricsSection()} */}
+          {/* <DeleteMetaMetricsData /> */}
           <DeleteWalletData />
           {this.renderThirdPartySection()}
           {this.renderApprovalModal()}

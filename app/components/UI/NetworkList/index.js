@@ -35,7 +35,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
       minHeight: 470,
     },
     titleWrapper: {
@@ -96,7 +96,7 @@ const createStyles = (colors) =>
     networkIcon: {
       width: 20,
       height: 20,
-      borderRadius: 10,
+      borderRadius: 0,
     },
     networkWrapper: {
       flex: 0,

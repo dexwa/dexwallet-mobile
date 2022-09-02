@@ -16,7 +16,7 @@ const createStyles = (colors) =>
     static: {
       borderWidth: 3.5,
       borderColor: colors.background.alternative,
-      borderRadius: 64,
+      borderRadius: 0,
       width: 36,
       height: 36,
     },

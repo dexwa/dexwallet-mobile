@@ -24,8 +24,8 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       paddingTop: 24,
       minHeight: '90%',
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       paddingBottom: Device.isIphoneX() ? 20 : 0,
     },
     expandedHeight2: {
@@ -42,7 +42,7 @@ const createStyles = (colors) =>
       width: 40,
       height: 40,
       marginRight: 8,
-      borderRadius: 20,
+      borderRadius: 0,
     },
     messageColumn: {
       width: '75%',
@@ -92,7 +92,7 @@ const createStyles = (colors) =>
       width: '100%',
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: 16,
     },
     arrowIconWrapper: {

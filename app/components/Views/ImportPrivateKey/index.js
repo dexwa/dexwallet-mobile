@@ -104,7 +104,7 @@ const createStyles = (colors) =>
       paddingLeft: 20,
       paddingRight: 20,
       fontSize: 15,
-      borderRadius: 4,
+      borderRadius: 0,
       height: 120,
       borderWidth: StyleSheet.hairlineWidth,
       borderColor: colors.border.default,
@@ -186,7 +186,7 @@ export default class ImportPrivateKey extends PureComponent {
       screen: 'SimpleWebview',
       params: {
         url: 'https://metamask.zendesk.com/hc/en-us/articles/360015289932-What-are-imported-accounts-',
-        title: strings('drawer.metamask_support'),
+        title: strings('drawer.dexwallet_support'),
       },
     });
 

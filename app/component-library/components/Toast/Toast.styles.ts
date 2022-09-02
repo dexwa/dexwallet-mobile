@@ -19,7 +19,7 @@ const styleSheet = StyleSheet.create({
     left: marginWidth,
     bottom: 0,
     backgroundColor: colors.background.alternative,
-    borderRadius: 4,
+    borderRadius: 0,
     padding,
     flexDirection: 'row',
   },

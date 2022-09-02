@@ -15,14 +15,14 @@ const createStyles = (colors) =>
     floatingBackground: {
       backgroundColor: colors.background.default,
       marginHorizontal: 16,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     defaultFlashFloating: {
       backgroundColor: colors.overlay.alternative,
       padding: 16,
       flexDirection: 'row',
       flex: 1,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     flashLabel: {
       flex: 1,

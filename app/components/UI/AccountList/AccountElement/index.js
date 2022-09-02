@@ -73,7 +73,7 @@ const createStyles = (colors) =>
     importedWrapper: {
       paddingHorizontal: 10,
       paddingVertical: 3,
-      borderRadius: 10,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
     },

@@ -27,7 +27,7 @@ const createStyles = (colors) =>
       position: 'absolute',
       left: 16,
       right: 16,
-      borderRadius: 8,
+      borderRadius: 0,
       borderColor: colors.warning.default,
       borderWidth: 1,
     },

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   roundImage: {
     overflow: 'hidden',
-    borderRadius: 25,
+    borderRadius: 0,
   },
 });
 

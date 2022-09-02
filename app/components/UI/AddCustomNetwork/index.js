@@ -24,15 +24,15 @@ const createStyles = (colors) =>
     root: {
       backgroundColor: colors.background.default,
       paddingTop: 24,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       minHeight: 200,
       paddingBottom: Device.isIphoneX() ? 20 : 0,
     },
     accountCardWrapper: {
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: 16,
       margin: 24,
     },

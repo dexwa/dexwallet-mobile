@@ -44,7 +44,7 @@ const createStyles = (colors) =>
       position: 'absolute',
       width: DIAMETER,
       height: DIAMETER,
-      borderRadius: DIAMETER,
+      borderRadius: 0,
       borderWidth: MARGIN,
       borderColor: colors.primary.alternative,
       backgroundColor: colors.primary.inverse,
@@ -56,7 +56,7 @@ const createStyles = (colors) =>
       height: DIAMETER,
       justifyContent: 'center',
       alignItems: 'center',
-      borderRadius: DIAMETER,
+      borderRadius: 0,
       backgroundColor: colors.primary.alternative,
     },
     trackBackGradient: {
@@ -76,7 +76,7 @@ const createStyles = (colors) =>
       position: 'absolute',
       overflow: 'hidden',
       height: '100%',
-      borderRadius: DIAMETER,
+      borderRadius: 0,
     },
 
     textFrontContainer: {

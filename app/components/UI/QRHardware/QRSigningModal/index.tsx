@@ -24,8 +24,8 @@ const createStyles = (colors: any) =>
       height: 600,
       backgroundColor: colors.background.default,
       paddingTop: 24,
-      borderTopLeftRadius: 24,
-      borderTopRightRadius: 24,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
   });
 

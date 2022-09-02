@@ -18,7 +18,7 @@ const createStyles = (colors) =>
     viewData: {
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: 16,
       marginTop: 20,
     },
@@ -42,7 +42,7 @@ const createStyles = (colors) =>
     transactionDetails: {
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: 16,
     },
     transactionDetailsRow: {

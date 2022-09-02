@@ -15,7 +15,7 @@ const createStyles = (colors: Colors) =>
       paddingVertical: 12,
     },
     amount: {
-      borderRadius: 999,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
       marginRight: 5,

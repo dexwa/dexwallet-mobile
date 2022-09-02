@@ -78,16 +78,16 @@ export default {
   },
   MAX_SAFE_CHAIN_ID: 4503599627370476,
   URLS: {
-    TERMS_AND_CONDITIONS: 'https://consensys.net/terms-of-use/',
-    PRIVACY_POLICY: 'https://consensys.net/privacy-policy/',
+    TERMS_AND_CONDITIONS: 'https://dexwallet.com/terms-of-use/',
+    PRIVACY_POLICY: 'https://dexwallet.com/privacy-policy/',
     CONNECTIVITY_ISSUES:
-      'https://metamask.zendesk.com/hc/en-us/articles/360059386712',
-    NFT: 'https://metamask.zendesk.com/hc/en-us/articles/360058238591-NFT-tokens-in-MetaMask-wallet',
+      'https://dexwallet.com/support/hc/en-us/articles/360059386712',
+    NFT: 'https://dexwallet.com/support/hc/en-us/articles/360058238591-NFT-tokens-in-DexWallet-wallet',
     SECURITY:
-      'https://metamask.zendesk.com/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-MetaMask',
+        'https://dexwallet.com/support/hc/en-us/articles/360015489591-Basic-Safety-and-Security-Tips-for-DexWallet',
     TOKEN_BALANCE:
-      'https://metamask.zendesk.com/hc/en-us/articles/360028059272-What-to-do-when-your-balance-of-ETH-and-or-ERC20-tokens-is-incorrect-inaccurate',
-    MM_FAUCET: 'https://faucet.metamask.io/',
+      'https://dexwallet.com/support/hc/en-us/articles/360028059272-What-to-do-when-your-balance-of-ETH-and-or-ERC20-tokens-is-incorrect-inaccurate',
+    MM_FAUCET: 'https://faucet.dexwallet.com/',
   },
   ERRORS: {
     INFURA_BLOCKED_MESSAGE:

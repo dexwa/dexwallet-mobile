@@ -95,7 +95,7 @@ const createStyles = (colors) =>
       flex: 1,
       marginTop: Device.isAndroid() ? 0 : 12,
       marginLeft: 15,
-      paddingTop: Device.isAndroid() ? 10 : 0,
+      paddingTop: Device.isAndroid() ? 5 : 0,
     },
     metamaskFox: {
       height: 27,
@@ -105,7 +105,7 @@ const createStyles = (colors) =>
     metamaskName: {
       marginTop: 4,
       width: 90,
-      height: 18,
+      height: 40,
       tintColor: colors.text.default,
     },
     account: {
@@ -123,7 +123,7 @@ const createStyles = (colors) =>
       height: 56,
     },
     identiconBorder: {
-      borderRadius: 96,
+      borderRadius: 0,
       borderWidth: 2,
       padding: 2,
       borderColor: colors.primary.default,
@@ -172,7 +172,7 @@ const createStyles = (colors) =>
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: 30,
+      borderRadius: 0,
       borderWidth: 1.5,
     },
     leftButton: {
@@ -216,8 +216,8 @@ const createStyles = (colors) =>
     selectedRoute: {
       backgroundColor: colors.primary.muted,
       marginRight: 10,
-      borderTopRightRadius: 20,
-      borderBottomRightRadius: 20,
+      borderTopRightRadius: 0,
+      borderBottomRightRadius: 0,
     },
     selectedName: {
       color: colors.primary.default,
@@ -257,7 +257,7 @@ const createStyles = (colors) =>
       width: 73,
       paddingHorizontal: 10,
       paddingVertical: 3,
-      borderRadius: 10,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.icon.alternative,
     },
@@ -269,8 +269,8 @@ const createStyles = (colors) =>
     protectWalletContainer: {
       backgroundColor: colors.background.default,
       paddingTop: 24,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       paddingVertical: 16,
       paddingBottom: Device.isIphoneX() ? 20 : 0,
       paddingHorizontal: 40,
@@ -279,7 +279,7 @@ const createStyles = (colors) =>
       alignSelf: 'center',
       width: 56,
       height: 56,
-      borderRadius: 28,
+      borderRadius: 0,
       backgroundColor: colors.error.muted,
       borderColor: colors.error.default,
       borderWidth: 1,
@@ -306,8 +306,8 @@ const createStyles = (colors) =>
     protectWalletButtonWrapper: { marginVertical: 8 },
   });
 
-const metamask_name = require('../../../images/metamask-name.png'); // eslint-disable-line
-const metamask_fox = require('../../../images/fox.png'); // eslint-disable-line
+const dexwallet_name = require('../../../images/dexwallet-nav.png'); // eslint-disable-line
+// const metamask_fox = require('../../../images/fox.png'); // eslint-disable-line
 const ICON_IMAGES = {
   wallet: require('../../../images/wallet-icon.png'), // eslint-disable-line
   'selected-wallet': require('../../../images/selected-wallet-icon.png'), // eslint-disable-line
@@ -804,21 +804,21 @@ class DrawerView extends PureComponent {
     this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_VIEW_ETHERSCAN);
   };
 
-  submitFeedback = () => {
-    this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_SEND_FEEDBACK);
-    this.goToBrowserUrl(
-      'https://community.metamask.io/c/feature-requests-ideas/',
-      strings('drawer.request_feature'),
-    );
-  };
+  // submitFeedback = () => {
+  //   this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_SEND_FEEDBACK);
+  //   this.goToBrowserUrl(
+  //     'https://community.metamask.io/c/feature-requests-ideas/',
+  //     strings('drawer.request_feature'),
+  //   );
+  // };
 
-  showHelp = () => {
-    this.goToBrowserUrl(
-      'https://support.metamask.io',
-      strings('drawer.metamask_support'),
-    );
-    this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_GET_HELP);
-  };
+  // showHelp = () => {
+  //   this.goToBrowserUrl(
+  //     'https://support.metamask.io',
+  //     strings('drawer.dexwallet_support'),
+  //   );
+  //   this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_GET_HELP);
+  // };
 
   goToBrowserUrl(url, title) {
     this.props.navigation.navigate('Webview', {
@@ -1019,16 +1019,16 @@ class DrawerView extends PureComponent {
           warning: strings('drawer.settings_warning_short'),
           action: this.showSettings,
         },
-        {
-          name: strings('drawer.help'),
-          icon: this.getIcon('comments'),
-          action: this.showHelp,
-        },
-        {
-          name: strings('drawer.request_feature'),
-          icon: this.getFeatherIcon('message-square'),
-          action: this.submitFeedback,
-        },
+        // {
+        //   name: strings('drawer.help'),
+        //   icon: this.getIcon('comments'),
+        //   action: this.showHelp,
+        // },
+        // {
+        //   name: strings('drawer.request_feature'),
+        //   icon: this.getFeatherIcon('message-square'),
+        //   action: this.submitFeedback,
+        // },
         {
           name: strings('drawer.lock'),
           icon: this.getFeatherIcon('log-out'),
@@ -1218,13 +1218,13 @@ class DrawerView extends PureComponent {
         <ScrollView>
           <View style={styles.header}>
             <View style={styles.metamaskLogo}>
-              <Image
+              {/* <Image
                 source={metamask_fox}
                 style={styles.metamaskFox}
                 resizeMethod={'auto'}
-              />
+              /> */}
               <Image
-                source={metamask_name}
+                source={dexwallet_name}
                 style={styles.metamaskName}
                 resizeMethod={'auto'}
               />

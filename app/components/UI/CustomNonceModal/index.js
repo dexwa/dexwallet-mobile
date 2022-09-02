@@ -31,8 +31,8 @@ const createStyles = (colors) =>
     modal: {
       minHeight: 200,
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
     modalContainer: {
       margin: 24,
@@ -80,7 +80,7 @@ const createStyles = (colors) =>
       padding: 16,
       display: 'flex',
       flexDirection: 'row',
-      borderRadius: 8,
+      borderRadius: 0,
       marginTop: 10,
       marginBottom: 16,
     },

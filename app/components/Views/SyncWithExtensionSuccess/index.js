@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     padding: 16,
 
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: 0,
     marginTop: 29,
   },
   passwordTipText: {
@@ -147,7 +147,7 @@ class SyncWithExtensionSuccess extends PureComponent {
       screen: 'SimpleWebview',
       params: {
         url: 'https://metamask.zendesk.com/hc/en-us/articles/360015489591-Basic-Safety-Tips',
-        title: strings('drawer.metamask_support'),
+        title: strings('drawer.dexwallet_support'),
       },
     });
   };

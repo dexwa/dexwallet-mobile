@@ -36,7 +36,7 @@ const createStyles = (colors) =>
       alignItems: 'center',
       justifyContent: 'center',
       borderWidth: 2,
-      borderRadius: 9999,
+      borderRadius: 0,
       borderColor: colors.border.muted,
     }),
     circleSelected: {
@@ -54,7 +54,7 @@ const createStyles = (colors) =>
       flexShrink: 0,
       flexGrow: 0,
       backgroundColor: colors.primary.default,
-      borderRadius: 999,
+      borderRadius: 0,
     }),
     innerCircleError: {
       backgroundColor: colors.error.default,

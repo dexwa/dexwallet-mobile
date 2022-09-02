@@ -15,7 +15,7 @@ const createStyles = (colors) =>
     container(backgroundColor) {
       return {
         flex: 0,
-        borderRadius: 12,
+        borderRadius: 0,
         backgroundColor: `#${backgroundColor}`,
       };
     },
@@ -37,13 +37,13 @@ const createStyles = (colors) =>
       }),
     },
     image: {
-      borderRadius: 12,
+      borderRadius: 0,
     },
     textContainer: {
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: colors.background.alternative,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     textWrapper: {
       textAlign: 'center',

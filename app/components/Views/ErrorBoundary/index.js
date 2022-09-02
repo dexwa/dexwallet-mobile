@@ -56,7 +56,7 @@ const createStyles = (colors) =>
     },
     errorContainer: {
       backgroundColor: colors.error.muted,
-      borderRadius: 8,
+      borderRadius: 0,
       marginTop: 24,
     },
     error: {
@@ -70,7 +70,7 @@ const createStyles = (colors) =>
       marginTop: 24,
       borderColor: colors.primary.default,
       borderWidth: 1,
-      borderRadius: 50,
+      borderRadius: 0,
       padding: 12,
       paddingHorizontal: 34,
     },

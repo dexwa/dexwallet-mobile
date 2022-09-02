@@ -44,7 +44,7 @@ const createStyles = (colors) =>
       flex: 1,
       fontSize: 12,
       borderColor: colors.border.default,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 2,
       padding: 10,
       flexDirection: 'row',

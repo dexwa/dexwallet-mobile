@@ -21,7 +21,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
       minHeight: 450,
     },
     titleWrapper: {

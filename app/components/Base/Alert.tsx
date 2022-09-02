@@ -38,7 +38,7 @@ const createStyles = (colors: any) =>
       paddingHorizontal: 12,
       paddingVertical: 8,
       borderWidth: 1,
-      borderRadius: 8,
+      borderRadius: 0,
       flexDirection: 'row',
     },
     baseSmall: {

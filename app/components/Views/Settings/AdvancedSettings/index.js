@@ -101,7 +101,7 @@ const createStyles = (colors) =>
     },
     picker: {
       borderColor: colors.border.default,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 2,
       marginTop: 16,
     },
@@ -460,7 +460,7 @@ class AdvancedSettings extends PureComponent {
               </View>
             </View>
             {this.renderTokenDetectionSection()}
-            <View style={styles.setting}>
+            {/* <View style={styles.setting}>
               <Text style={styles.title}>
                 {strings('app_settings.state_logs')}
               </Text>
@@ -474,7 +474,7 @@ class AdvancedSettings extends PureComponent {
               >
                 {strings('app_settings.state_logs_button')}
               </StyledButton>
-            </View>
+            </View> */}
           </View>
         </KeyboardAwareScrollView>
       </SafeAreaView>

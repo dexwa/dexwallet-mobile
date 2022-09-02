@@ -19,7 +19,7 @@ const createStyles = (colors) =>
     hintWrapper: {
       alignSelf: 'center',
       backgroundColor: colors.background.default,
-      borderRadius: 16,
+      borderRadius: 0,
       padding: 24,
     },
     hintHeader: {
@@ -46,7 +46,7 @@ const createStyles = (colors) =>
       marginBottom: 16,
     },
     hintInput: {
-      borderRadius: 6,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
       padding: 16,

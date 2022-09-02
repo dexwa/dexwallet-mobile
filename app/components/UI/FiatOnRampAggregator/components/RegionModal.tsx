@@ -43,8 +43,8 @@ const createStyles = (colors: Colors) =>
     },
     modalView: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       flex: 0.75,
     },
     inputWrapper: {
@@ -54,7 +54,7 @@ const createStyles = (colors: Colors) =>
       marginTop: 10,
       paddingVertical: Device.isAndroid() ? 0 : 10,
       paddingHorizontal: 5,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
     },

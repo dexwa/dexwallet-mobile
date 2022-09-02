@@ -17,7 +17,7 @@ const createStyles = (colors) =>
     rangeInputContainer: (error) => ({
       borderColor: error ? colors.error.default : colors.border.default,
       borderWidth: 1,
-      borderRadius: 6,
+      borderRadius: 0,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -41,7 +41,7 @@ const createStyles = (colors) =>
       flex: 1,
     },
     button: {
-      borderRadius: 100,
+      borderRadius: 0,
       borderWidth: 2,
       borderColor: colors.primary.default,
       height: 20,

@@ -20,7 +20,7 @@ const createStyles = (colors) =>
       justifyContent: 'flex-start',
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: Device.isMediumDevice() ? 8 : 16,
       alignItems: 'center',
     },
@@ -68,7 +68,7 @@ const createStyles = (colors) =>
       fontSize: 12,
     },
     tag: {
-      borderRadius: 14,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.text.default,
       padding: 4,

@@ -13,7 +13,7 @@ const createStyles = (colors: Colors) =>
       backgroundColor: colors.background.alternative,
     },
     digitButton: {
-      borderRadius: 8,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       paddingVertical: 5,
       margin: 3.5,
@@ -33,7 +33,7 @@ const createStyles = (colors: Colors) =>
       padding: 0,
     },
     periodButton: {
-      borderRadius: 8,
+      borderRadius: 0,
       backgroundColor: importedColors.transparent,
       paddingVertical: 0,
       margin: 3.5,

@@ -24,7 +24,7 @@ const createStyles = (colors: {
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
     },
     modalContentView: {
       padding: 20,
@@ -42,7 +42,7 @@ const createStyles = (colors: {
     },
     tokenType: {
       padding: 10,
-      borderRadius: 40,
+      borderRadius: 0,
       alignItems: 'center',
       justifyContent: 'center',
       flexDirection: 'row',
@@ -89,7 +89,7 @@ const createStyles = (colors: {
       marginRight: 6,
       height: 20,
       width: 20,
-      borderRadius: 10,
+      borderRadius: 0,
       alignItems: 'center',
       justifyContent: 'center',
     },

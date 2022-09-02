@@ -23,7 +23,7 @@ const createStyles = (colors) =>
       alignSelf: 'center',
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: 8,
+      borderRadius: 0,
     }),
     copyAlertIcon: {
       marginBottom: 20,

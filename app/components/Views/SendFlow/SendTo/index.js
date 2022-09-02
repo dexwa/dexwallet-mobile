@@ -107,7 +107,7 @@ const createStyles = (colors) =>
     addInputWrapper: {
       flexDirection: 'row',
       borderWidth: 1,
-      borderRadius: 8,
+      borderRadius: 0,
       borderColor: colors.border.default,
       height: 50,
       width: '100%',
@@ -156,7 +156,7 @@ const createStyles = (colors) =>
       borderWidth: 1,
       borderColor: colors.error.default,
       backgroundColor: colors.error.muted,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     confusabeWarning: {
       borderColor: colors.warning.default,

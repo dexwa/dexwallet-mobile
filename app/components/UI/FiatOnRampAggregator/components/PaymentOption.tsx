@@ -32,7 +32,7 @@ const createStyles = (colors: Colors) =>
       width: 38,
       height: 38,
       backgroundColor: colors.background.alternative,
-      borderRadius: 6,
+      borderRadius: 0,
       justifyContent: 'center',
       alignItems: 'center',
     },

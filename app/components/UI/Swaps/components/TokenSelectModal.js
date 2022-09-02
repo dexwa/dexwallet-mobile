@@ -53,8 +53,8 @@ const createStyles = (colors) =>
     },
     modalView: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
     inputWrapper: {
       flexDirection: 'row',
@@ -63,7 +63,7 @@ const createStyles = (colors) =>
       marginVertical: 10,
       paddingVertical: Device.isAndroid() ? 0 : 10,
       paddingHorizontal: 5,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 1,
       borderColor: colors.border.default,
     },
@@ -96,7 +96,7 @@ const createStyles = (colors) =>
       paddingVertical: 6,
       paddingHorizontal: 10,
       backgroundColor: colors.primary.default,
-      borderRadius: 100,
+      borderRadius: 0,
     },
     importButtonText: {
       color: colors.primary.inverse,

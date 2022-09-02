@@ -26,7 +26,7 @@ const createStyles = (colors) =>
     networkIcon: {
       width: 5,
       height: 5,
-      borderRadius: 100,
+      borderRadius: 0,
       marginRight: 5,
       marginTop: Device.isIos() ? 4 : 5,
     },

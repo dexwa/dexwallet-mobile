@@ -24,7 +24,7 @@ const styleSheet = (params: { theme: Theme; vars: TagStyleSheetVars }) => {
         backgroundColor: theme.colors.background.default,
         borderColor: theme.colors.border.default,
         borderWidth: 1,
-        borderRadius: 10,
+        borderRadius: 0,
         height: 20,
         paddingHorizontal: 4,
         justifyContent: 'center',

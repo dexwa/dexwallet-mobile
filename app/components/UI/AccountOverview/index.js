@@ -88,7 +88,7 @@ const createStyles = (colors) =>
       borderWidth: 1,
       borderColor: colors.text.default,
       height: 28,
-      borderRadius: 14,
+      borderRadius: 0,
     },
     tagText: {
       fontSize: 12,
@@ -99,7 +99,7 @@ const createStyles = (colors) =>
     },
     addressWrapper: {
       backgroundColor: colors.primary.muted,
-      borderRadius: 40,
+      borderRadius: 0,
       marginTop: 20,
       marginBottom: 20,
       paddingVertical: 7,
@@ -118,14 +118,14 @@ const createStyles = (colors) =>
       ...fontStyles.normal,
     },
     identiconBorder: {
-      borderRadius: 80,
+      borderRadius: 0,
       borderWidth: 2,
       padding: 2,
       borderColor: colors.primary.default,
     },
     onboardingWizardLabel: {
       borderWidth: 2,
-      borderRadius: 4,
+      borderRadius: 0,
       paddingVertical: Device.isIos() ? 2 : -4,
       paddingHorizontal: Device.isIos() ? 5 : 5,
       top: Device.isIos() ? 0 : -2,

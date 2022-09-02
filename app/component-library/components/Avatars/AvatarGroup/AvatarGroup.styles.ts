@@ -27,7 +27,7 @@ const styleSheet = (params: { theme: Theme; vars: any }) => {
     },
     stackedAvatarWrapper: {
       position: 'absolute',
-      borderRadius: 50,
+      borderRadius: 0,
       borderWidth,
       borderColor: theme.colors.background.default,
     },

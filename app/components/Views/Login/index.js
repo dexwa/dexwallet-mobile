@@ -520,7 +520,7 @@ class Login extends PureComponent {
               <View style={styles.foxWrapper}>
                 {Device.isAndroid() ? (
                   <Image
-                    source={require('../../../images/fox.png')}
+                    source={require('../../../images/dexwallet-main.png')}
                     style={styles.image}
                     resizeMethod={'auto'}
                   />

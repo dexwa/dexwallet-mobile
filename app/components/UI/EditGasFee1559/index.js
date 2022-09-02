@@ -37,8 +37,8 @@ const createStyles = (colors) =>
   StyleSheet.create({
     root: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       minHeight: 200,
       maxHeight: '95%',
       paddingTop: 24,

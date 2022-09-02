@@ -30,8 +30,8 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       minHeight: 450,
     },
     titleWrapper: {
@@ -45,7 +45,7 @@ const createStyles = (colors) =>
     dragger: {
       width: 48,
       height: 5,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.border.default,
       opacity: Device.isAndroid() ? 0.6 : 0.5,
     },

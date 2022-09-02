@@ -20,7 +20,7 @@ const createStyles = (colors) =>
     dragger: {
       width: 48,
       height: 5,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.border.default,
     },
   });

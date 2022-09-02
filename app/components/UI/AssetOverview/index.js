@@ -57,7 +57,7 @@ const createStyles = (colors) =>
       marginTop: 15,
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: 10,
+      borderRadius: 0,
       marginBottom: 10,
     },
     ethLogo: {
@@ -93,7 +93,7 @@ const createStyles = (colors) =>
       flexDirection: 'row',
     },
     warning: {
-      borderRadius: 8,
+      borderRadius: 0,
       color: colors.text.default,
       ...fontStyles.normal,
       fontSize: 14,

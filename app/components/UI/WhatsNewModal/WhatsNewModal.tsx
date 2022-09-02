@@ -58,7 +58,7 @@ const createStyles = (colors: Colors) =>
     slideCircle: {
       width: 8,
       height: 8,
-      borderRadius: 8 / 2,
+      borderRadius: 0,
       backgroundColor: colors.icon.default,
       opacity: 0.4,
       marginHorizontal: 8,
@@ -90,12 +90,12 @@ const createStyles = (colors: Colors) =>
     },
     slideImageContainer: {
       flexDirection: 'row',
-      borderRadius: 10,
+      borderRadius: 0,
       marginBottom: 24,
     },
     slideImage: {
       flex: 1,
-      borderRadius: 10,
+      borderRadius: 0,
       width: slideImageWidth,
       height: slideImageHeight,
     },
@@ -115,7 +115,7 @@ const createStyles = (colors: Colors) =>
     screen: { justifyContent: 'center', alignItems: 'center' },
     modal: {
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
       marginHorizontal: modalMargin,
     },
     bodyContainer: {

@@ -19,8 +19,8 @@ const createStyles = (colors) =>
     },
     modalView: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
     content: {
       marginVertical: 14,
@@ -45,7 +45,7 @@ const createStyles = (colors) =>
     tokenAddress: {
       backgroundColor: colors.background.alternative,
       width: '100%',
-      borderRadius: 20,
+      borderRadius: 0,
       marginVertical: 6,
       paddingHorizontal: 8,
       paddingVertical: 4,

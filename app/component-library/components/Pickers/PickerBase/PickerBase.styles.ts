@@ -30,7 +30,7 @@ const styleSheet = (params: {
         padding: 16,
         borderWidth: 1,
         borderColor: colors.border.default,
-        borderRadius: 4,
+        borderRadius: 0,
         backgroundColor: colors.background.default,
       } as ViewStyle,
       style,

@@ -16,7 +16,7 @@ const createStyles = (colors) =>
     },
     wrapper: {
       padding: 12,
-      borderRadius: 10,
+      borderRadius: 0,
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'center',

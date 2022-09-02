@@ -25,7 +25,7 @@ const styleSheet = (params: { theme: Theme; vars: TagUrlStyleSheetVars }) => {
         backgroundColor: colors.background.default,
         borderColor: colors.border.default,
         borderWidth: 1,
-        borderRadius: 99,
+        borderRadius: 0,
         paddingVertical: 8,
         paddingLeft: 8,
         paddingRight: 16,

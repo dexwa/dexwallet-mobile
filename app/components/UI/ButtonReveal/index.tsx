@@ -17,7 +17,7 @@ import Animated, {
 import { useTheme } from '../../../util/theme';
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
-const radius = 14;
+const radius = 0;
 const strokeWidth = 2;
 const iconSize = radius - 4;
 const innerRadius = radius - strokeWidth / 2;
@@ -33,7 +33,7 @@ const createStyles = (colors: any) =>
       flexDirection: 'row',
       paddingVertical: 12,
       paddingHorizontal: 24,
-      borderRadius: 99,
+      borderRadius: 0,
     },
     progressContainer: {
       height: radius * 2,
@@ -60,7 +60,7 @@ const createStyles = (colors: any) =>
     },
     innerCircle: {
       flex: 1,
-      borderRadius: radius - strokeWidth,
+      borderRadius: radius,
       margin: strokeWidth,
       backgroundColor: colors.primary.default,
     },

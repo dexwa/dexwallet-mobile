@@ -43,7 +43,7 @@ const createStyles = (colors) =>
       padding: 12,
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 8,
+      borderRadius: 0,
       flex: 1,
     },
     label: {

@@ -77,7 +77,7 @@ const createStyles = (colors) =>
     userImage: {
       width: 38,
       height: 38,
-      borderRadius: 100,
+      borderRadius: 0,
       marginRight: 8,
     },
     buttonContainer: {
@@ -119,7 +119,7 @@ const createStyles = (colors) =>
     dragger: {
       width: 48,
       height: 5,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.border.default,
     },
     scrollableDescription: {

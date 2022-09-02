@@ -26,8 +26,8 @@ const createStyles = (colors: Colors) =>
     },
     modalView: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       flex: 0.75,
     },
     resultsView: {

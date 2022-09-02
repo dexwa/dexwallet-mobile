@@ -14,7 +14,7 @@ const createStyles = (colors) =>
       paddingVertical: 10,
       paddingHorizontal: 15,
       height: 40,
-      borderRadius: 4,
+      borderRadius: 0,
     },
   });
 

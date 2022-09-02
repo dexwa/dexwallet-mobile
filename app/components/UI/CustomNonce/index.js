@@ -12,7 +12,7 @@ const createStyles = (colors) =>
       marginHorizontal: 24,
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 8,
+      borderRadius: 0,
       paddingVertical: 14,
       paddingHorizontal: 16,
       display: 'flex',

@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   round: {
-    borderRadius: 12,
+    borderRadius: 0,
   },
   collectibleMediaWrapper: {
     position: 'absolute',
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     right: 0,
     marginHorizontal: 16,
     marginTop: Device.hasNotch() ? 36 : 16,
-    borderRadius: 12,
+    borderRadius: 0,
     backgroundColor: importedColors.transparent,
   },
 });

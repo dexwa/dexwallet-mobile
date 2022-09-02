@@ -16,7 +16,7 @@ const createStyles = (colors) =>
     viewContainer: {
       width: '100%',
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
     },
     actionHorizontalContainer: {
       flexDirection: 'row',

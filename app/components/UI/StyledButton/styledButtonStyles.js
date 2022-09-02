@@ -5,7 +5,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     container: {
       padding: 15,
-      borderRadius: 100,
+      borderRadius: 0,
       justifyContent: 'center',
     },
     text: {

@@ -13,7 +13,7 @@ const createStyles = (colors) =>
     circle: {
       width: 12,
       height: 12,
-      borderRadius: 12 / 2,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       opacity: 1,
       margin: 2,
@@ -35,7 +35,7 @@ const createStyles = (colors) =>
     selectedCircle: {
       width: 12,
       height: 12,
-      borderRadius: 12 / 2,
+      borderRadius: 0,
       backgroundColor: colors.primary.default,
       opacity: 1,
       margin: 2,

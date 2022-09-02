@@ -18,7 +18,7 @@ const createStyles = (colors) =>
     },
     textInput: {
       borderWidth: 1,
-      borderRadius: 4,
+      borderRadius: 0,
       borderColor: colors.border.default,
       padding: 16,
       ...fontStyles.normal,

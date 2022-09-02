@@ -8,7 +8,7 @@ const createStyles = (colors) =>
     wrapper: {
       borderWidth: 1,
       borderColor: colors.border.muted,
-      borderRadius: 8,
+      borderRadius: 0,
       padding: 16,
     },
     row: {

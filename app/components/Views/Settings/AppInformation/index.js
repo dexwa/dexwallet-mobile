@@ -74,7 +74,7 @@ const createStyles = (colors) =>
     },
   });
 
-const foxImage = require('../../../../images/fox.png'); // eslint-disable-line import/no-commonjs
+const LogoImage = require('../../../../images/dexwallet-main.png'); // eslint-disable-line import/no-commonjs
 
 /**
  * View that contains app information
@@ -106,10 +106,10 @@ export default class AppInformation extends PureComponent {
 
   componentDidMount = async () => {
     this.updateNavBar();
-    const appName = await getApplicationName();
+    // const appName = await getApplicationName();
     const appVersion = await getVersion();
     const buildNumber = await getBuildNumber();
-    this.setState({ appInfo: `${appName} v${appVersion} (${buildNumber})` });
+    this.setState({ appInfo: `DexWallet v${appVersion} (${buildNumber})` });
   };
 
   componentDidUpdate = () => {
@@ -140,23 +140,23 @@ export default class AppInformation extends PureComponent {
 
   onAttributions = () => {
     const url =
-      'https://raw.githubusercontent.com/MetaMask/metamask-mobile/main/attribution.txt';
+      'https://raw.githubusercontent.com/dexwa/dexwallet-mobile/main/attribution.txt';
     this.goTo(url, strings('app_information.attributions'));
   };
 
   onSupportCenter = () => {
-    const url = 'https://metamask.zendesk.com/hc/en-us';
-    this.goTo(url, strings('drawer.metamask_support'));
+    const url = 'https://dexwallet.com/support/hc/en-us';
+    this.goTo(url, strings('drawer.dexwallet_support'));
   };
 
   onWebSite = () => {
-    const url = 'https://metamask.io/';
-    this.goTo(url, 'metamask.io');
+    const url = 'https://dexwallet.com/';
+    this.goTo(url, 'dexwallet.com');
   };
 
   onContactUs = () => {
-    const url = 'https://metamask.zendesk.com/hc/en-us';
-    this.goTo(url, strings('drawer.metamask_support'));
+    const url = 'https://dexwallet.com/support/hc/en-us';
+    this.goTo(url, strings('drawer.dexwallet_support'));
   };
 
   render = () => {
@@ -168,7 +168,7 @@ export default class AppInformation extends PureComponent {
         <ScrollView contentContainerStyle={styles.wrapperContent}>
           <View style={styles.logoWrapper}>
             <Image
-              source={foxImage}
+              source={LogoImage}
               style={styles.image}
               resizeMethod={'auto'}
             />

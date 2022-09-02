@@ -13,7 +13,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     container: {
       borderWidth: 1,
-      borderRadius: 8,
+      borderRadius: 0,
       borderColor: colors.primary.default,
       paddingVertical: 15,
       paddingHorizontal: 20,
@@ -39,7 +39,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.primary.default,
       color: colors.primary.inverse,
       margin: 0,
-      borderRadius: 12,
+      borderRadius: 0,
       overflow: 'hidden',
       ...fontStyles.bold,
     },

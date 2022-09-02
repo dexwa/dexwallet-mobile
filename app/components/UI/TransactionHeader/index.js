@@ -23,12 +23,12 @@ const createStyles = (colors) =>
     domainLogo: {
       width: 56,
       height: 56,
-      borderRadius: 32,
+      borderRadius: 0,
     },
     assetLogo: {
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: 10,
+      borderRadius: 0,
     },
     domanUrlContainer: {
       alignItems: 'center',
@@ -52,7 +52,7 @@ const createStyles = (colors) =>
       flexDirection: 'row',
     },
     networkStatusIndicator: {
-      borderRadius: 2.5,
+      borderRadius: 0,
       height: 5,
       width: 5,
     },
@@ -69,7 +69,7 @@ const createStyles = (colors) =>
       borderColor: colors.border.default,
       width: 56,
       height: 56,
-      borderRadius: 38,
+      borderRadius: 0,
     },
     deeplinkIcon: {
       alignSelf: 'center',

@@ -108,7 +108,7 @@ const createStyles = (colors) =>
       borderWidth: 1,
       borderColor: colors.border.default,
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
       paddingBottom: 5,
       paddingTop: 10,
     },
@@ -151,7 +151,7 @@ const createStyles = (colors) =>
     },
     optionIconWrapper: {
       flex: 0,
-      borderRadius: 5,
+      borderRadius: 0,
       backgroundColor: colors.primary.muted,
       padding: 3,
       marginRight: 10,
@@ -176,7 +176,7 @@ const createStyles = (colors) =>
     },
     searchWrapper: {
       flexDirection: 'row',
-      borderRadius: 30,
+      borderRadius: 0,
       backgroundColor: colors.background.alternative,
       height: Device.isAndroid() ? 40 : 30,
       flex: 1,

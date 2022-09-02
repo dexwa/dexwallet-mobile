@@ -7,7 +7,7 @@ export const createStyles = (colors: any) =>
     modal: {
       backgroundColor: colors.background.default,
       alignItems: 'center',
-      borderRadius: 8,
+      borderRadius: 0,
       paddingVertical: 36,
     },
     contentContainer: {

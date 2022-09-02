@@ -17,8 +17,8 @@ const createStyles = (colors) =>
     },
     modalView: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
     content: {
       marginVertical: 14,

@@ -92,7 +92,7 @@ const createStyles = (colors) =>
     circle: {
       width: 8,
       height: 8,
-      borderRadius: 8 / 2,
+      borderRadius: 0,
       backgroundColor: colors.icon.default,
       opacity: 0.4,
       marginHorizontal: 8,

@@ -30,7 +30,7 @@ const createStyles = (colors) =>
     button: {
       paddingVertical: 6,
       paddingHorizontal: 12,
-      borderRadius: 100,
+      borderRadius: 0,
     },
     warningButton: {
       backgroundColor: colors.warning.default,

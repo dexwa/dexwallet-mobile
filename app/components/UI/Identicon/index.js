@@ -27,7 +27,7 @@ const Identicon = React.memo((props) => {
         {
           height: diameter,
           width: diameter,
-          borderRadius: diameter / 2,
+          borderRadius: 0,
         },
         customStyle,
       ]}

@@ -16,7 +16,7 @@ const createStyles = (colors) =>
   StyleSheet.create({
     container: {
       flex: 1,
-      borderRadius: 12,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
     },
     content: {

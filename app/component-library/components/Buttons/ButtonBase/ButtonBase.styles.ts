@@ -30,7 +30,7 @@ const styleSheet = (params: {
         height: sizeAsNum,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: sizeAsNum / 2,
+        borderRadius: 0,
       } as ViewStyle,
       style,
     ) as ViewStyle,

@@ -25,14 +25,14 @@ const createStyles = (colors: any) =>
     screen: { justifyContent: 'flex-end' },
     sheet: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       height: '75%',
     },
     notch: {
       width: 48,
       height: 5,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.border.default,
       marginTop: 12,
       alignSelf: 'center',

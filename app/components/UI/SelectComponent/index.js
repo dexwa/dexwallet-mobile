@@ -62,7 +62,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       justifyContent: 'center',
       alignItems: 'center',
-      borderRadius: 10,
+      borderRadius: 0,
     },
     list: {
       width: '100%',

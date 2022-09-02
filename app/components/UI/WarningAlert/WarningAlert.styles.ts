@@ -19,7 +19,7 @@ const styleSheet = (params: { theme: Theme }) => {
       left: 16,
       right: 16,
       bottom: 20,
-      borderRadius: 8,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       borderColor: colors.warning.default,
     },

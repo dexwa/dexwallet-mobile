@@ -21,8 +21,8 @@ const createStyles = (colors) =>
     expandedRoot: {
       backgroundColor: colors.background.default,
       minHeight: Device.isIos() ? '70%' : '80%',
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       padding: 24,
       paddingBottom: Device.isIphoneX() ? 44 : 24,
     },
@@ -55,7 +55,7 @@ const createStyles = (colors) =>
     domainLogo: {
       width: 40,
       height: 40,
-      borderRadius: 20,
+      borderRadius: 0,
       marginBottom: 20,
     },
     messageFromLabel: {

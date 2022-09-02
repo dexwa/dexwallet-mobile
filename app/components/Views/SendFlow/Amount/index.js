@@ -115,7 +115,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.primary.default,
       paddingHorizontal: 16,
       paddingVertical: 2,
-      borderRadius: 100,
+      borderRadius: 0,
       flexDirection: 'row',
       alignItems: 'center',
     },
@@ -171,7 +171,7 @@ const createStyles = (colors) =>
     actionSwitch: {
       paddingHorizontal: 8,
       paddingVertical: 2,
-      borderRadius: 8,
+      borderRadius: 0,
       flexDirection: 'row',
       borderColor: colors.text.alternative,
       borderWidth: 1,
@@ -210,8 +210,8 @@ const createStyles = (colors) =>
     },
     assetsModalWrapper: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       height: 450,
     },
     titleWrapper: {
@@ -225,7 +225,7 @@ const createStyles = (colors) =>
     dragger: {
       width: 48,
       height: 5,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.border.default,
     },
     textAssetTitle: {

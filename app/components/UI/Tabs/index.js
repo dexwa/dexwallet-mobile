@@ -117,7 +117,7 @@ const createStyles = (colors) =>
       justifyContent: 'flex-start',
       alignContent: 'flex-start',
       backgroundColor: colors.primary.default,
-      borderRadius: 100,
+      borderRadius: 0,
       width: 30,
       height: 30,
       marginTop: -7,

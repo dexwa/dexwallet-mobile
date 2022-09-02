@@ -13,7 +13,7 @@ const createStyles = (colors) =>
       ...fontStyles.normal,
       alignItems: 'center',
       borderColor: colors.border.default,
-      borderRadius: 12,
+      borderRadius: 0,
       borderWidth: 1,
       color: colors.text.default,
       fontSize: 10,

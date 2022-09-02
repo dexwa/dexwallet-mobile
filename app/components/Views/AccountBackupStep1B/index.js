@@ -84,7 +84,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       borderWidth: 1,
       borderColor: colors.border.default,
-      borderRadius: 10,
+      borderRadius: 0,
       elevation: 4,
       padding: 16,
       marginBottom: 20,
@@ -222,7 +222,7 @@ const AccountBackupStep1B = (props) => {
       screen: 'SimpleWebview',
       params: {
         url: 'https://metamask.zendesk.com/hc/en-us/articles/360015489591-Basic-Safety-Tips',
-        title: strings('drawer.metamask_support'),
+        title: strings('drawer.dexwallet_support'),
       },
     });
   };

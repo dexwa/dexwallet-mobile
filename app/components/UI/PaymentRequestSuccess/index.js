@@ -146,7 +146,7 @@ const createStyles = (colors) =>
       paddingBottom: 24,
       paddingTop: 16,
       backgroundColor: colors.background.default,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     qrCodeWrapper: {
       marginVertical: 8,

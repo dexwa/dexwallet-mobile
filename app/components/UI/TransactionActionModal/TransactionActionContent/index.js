@@ -18,7 +18,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.alternative,
       textAlign: 'center',
       padding: 16,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     fee: {
       ...fontStyles.bold,

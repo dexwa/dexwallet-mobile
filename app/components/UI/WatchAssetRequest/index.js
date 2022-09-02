@@ -19,8 +19,8 @@ const createStyles = (colors) =>
   StyleSheet.create({
     root: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       paddingBottom: Device.isIphoneX() ? 20 : 0,
       minHeight: Device.isIos() ? '50%' : '60%',
     },

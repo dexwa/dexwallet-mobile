@@ -20,7 +20,7 @@ const createStyles = (colors) =>
     },
     phishingModalContent: {
       height: 495,
-      borderRadius: 4,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
     },
     phishingModalTitle: {

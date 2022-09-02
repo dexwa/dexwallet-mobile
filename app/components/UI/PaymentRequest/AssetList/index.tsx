@@ -17,7 +17,7 @@ const createStyles = (colors: any) =>
       borderColor: colors.border.default,
       padding: 8,
       marginBottom: 8,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     assetListElement: {
       flex: 1,

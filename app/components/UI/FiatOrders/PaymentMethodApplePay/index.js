@@ -100,7 +100,7 @@ const createStyles = (colors) =>
       marginHorizontal: 70,
     },
     quickAmount: {
-      borderRadius: 18,
+      borderRadius: 0,
       borderColor: colors.border.default,
       borderWidth: 1,
       paddingVertical: 5,

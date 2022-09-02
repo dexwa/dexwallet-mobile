@@ -80,7 +80,7 @@ const createStyles = (colors) =>
     },
     modalContainer: {
       width: '90%',
-      borderRadius: 10,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
     },
     elevatedView: {

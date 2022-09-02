@@ -55,7 +55,7 @@ const createStyles = (colors) =>
     },
     seedPhraseWrapper: {
       backgroundColor: colors.background.default,
-      borderRadius: 8,
+      borderRadius: 0,
       flexDirection: 'row',
       justifyContent: 'space-between',
       borderColor: colors.border.default,
@@ -93,7 +93,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       borderColor: colors.border.default,
       borderWidth: 1,
-      borderRadius: 34,
+      borderRadius: 0,
       borderStyle: 'dashed',
       marginLeft: 4,
     },
@@ -112,7 +112,7 @@ const createStyles = (colors) =>
       borderColor: colors.primary.default,
       borderWidth: 1,
       marginBottom: 6,
-      borderRadius: 13,
+      borderRadius: 0,
       textAlign: 'center',
     },
     selectableWordText: {

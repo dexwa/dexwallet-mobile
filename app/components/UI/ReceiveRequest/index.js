@@ -44,8 +44,8 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 10,
-      borderTopRightRadius: 10,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
     },
     body: {
       alignItems: 'center',
@@ -63,12 +63,12 @@ const createStyles = (colors) =>
       padding: 9,
       paddingHorizontal: 15,
       backgroundColor: colors.background.alternative,
-      borderRadius: 30,
+      borderRadius: 0,
     },
     copyButton: {
       backgroundColor: colors.background.default,
       color: colors.primary.default,
-      borderRadius: 12,
+      borderRadius: 0,
       overflow: 'hidden',
       paddingVertical: 3,
       paddingHorizontal: 6,

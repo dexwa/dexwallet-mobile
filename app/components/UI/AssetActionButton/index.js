@@ -23,7 +23,7 @@ const createStyles = (colors) =>
     buttonIconWrapper: {
       width: 36,
       height: 36,
-      borderRadius: 18,
+      borderRadius: 0,
       paddingTop: Device.isAndroid() ? 2 : 4,
       paddingLeft: 1,
       justifyContent: 'center',

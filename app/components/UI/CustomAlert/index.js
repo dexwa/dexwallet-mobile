@@ -13,14 +13,14 @@ const createStyles = (colors) =>
     },
     content: {
       backgroundColor: colors.background.default,
-      borderRadius: 16,
+      borderRadius: 0,
     },
     header: {
       paddingVertical: 15,
       height: 130,
       alignItems: 'center',
       borderTopEndRadius: 16,
-      borderTopLeftRadius: 16,
+      borderTopLeftRadius: 0,
     },
     body: {
       paddingVertical: 20,

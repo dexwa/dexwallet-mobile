@@ -26,7 +26,7 @@ const createStyles = (colors) =>
       width: 26,
       height: 26,
       marginRight: 7,
-      borderRadius: 13,
+      borderRadius: 0,
     },
     fallbackTextStyle: {
       fontSize: 12,

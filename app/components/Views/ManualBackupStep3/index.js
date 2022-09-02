@@ -153,7 +153,7 @@ class ManualBackupStep3 extends PureComponent {
       screen: 'SimpleWebview',
       params: {
         url: 'https://support.metamask.io',
-        title: strings('drawer.metamask_support'),
+        title: strings('drawer.dexwallet_support'),
       },
     });
 

@@ -78,12 +78,12 @@ const createStyles = (colors) =>
     },
     seedPhraseConcealerContainer: {
       flex: 1,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     seedPhraseConcealer: {
       backgroundColor: colors.overlay.alternative,
       alignItems: 'center',
-      borderRadius: 8,
+      borderRadius: 0,
       paddingHorizontal: 24,
       paddingVertical: 45,
     },
@@ -93,7 +93,7 @@ const createStyles = (colors) =>
       left: 0,
       bottom: 0,
       right: 0,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     icon: {
       width: 24,
@@ -123,7 +123,7 @@ const createStyles = (colors) =>
     },
     seedPhraseWrapper: {
       backgroundColor: colors.background.default,
-      borderRadius: 8,
+      borderRadius: 0,
       flexDirection: 'row',
       borderColor: colors.border.default,
       borderWidth: 1,
@@ -148,7 +148,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       borderColor: colors.primary.default,
       borderWidth: 1,
-      borderRadius: 13,
+      borderRadius: 0,
       textAlign: 'center',
       textAlignVertical: 'center',
       lineHeight: 14,
@@ -193,7 +193,7 @@ const createStyles = (colors) =>
     },
     input: {
       borderWidth: 2,
-      borderRadius: 5,
+      borderRadius: 0,
       width: '100%',
       borderColor: colors.border.default,
       padding: 10,

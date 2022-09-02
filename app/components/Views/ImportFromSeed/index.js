@@ -119,7 +119,7 @@ const createStyles = (colors) =>
       paddingBottom: 20,
       paddingHorizontal: 20,
       fontSize: 20,
-      borderRadius: 10,
+      borderRadius: 0,
       minHeight: 110,
       height: 'auto',
       borderWidth: 1,
@@ -175,7 +175,7 @@ const createStyles = (colors) =>
     qrCode: {
       marginRight: 10,
       borderWidth: 1,
-      borderRadius: 6,
+      borderRadius: 0,
       borderColor: colors.text.muted,
       paddingVertical: 4,
       paddingHorizontal: 6,

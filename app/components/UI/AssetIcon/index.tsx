@@ -34,7 +34,7 @@ const createStyles = (colors: any) =>
     logo: {
       width: 50,
       height: 50,
-      borderRadius: 25,
+      borderRadius: 0,
       overflow: 'hidden',
     },
     placeholder: { backgroundColor: colors.background.alternative },

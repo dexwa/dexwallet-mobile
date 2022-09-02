@@ -50,14 +50,14 @@ const createStyles = (colors) =>
     progressWrapper: {
       backgroundColor: colors.primary.muted,
       height: 3,
-      borderRadius: 3,
+      borderRadius: 0,
       marginVertical: 15,
     },
     progressBar: {
       backgroundColor: colors.primary.default,
       height: 3,
       width: 3,
-      borderRadius: 3,
+      borderRadius: 0,
       flex: 1,
     },
     aggContainer: {
@@ -65,7 +65,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
       paddingHorizontal: 10,
       paddingVertical: 5,
-      borderRadius: 20,
+      borderRadius: 0,
       opacity: 0,
       top: '50%',
       left: '50%',

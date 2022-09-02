@@ -33,8 +33,8 @@ const styleSheet = (params: {
     },
     sheet: {
       backgroundColor: colors.background.default,
-      borderTopLeftRadius: 16,
-      borderTopRightRadius: 16,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       maxHeight: maxSheetHeight,
       overflow: 'hidden',
     },
@@ -44,7 +44,7 @@ const styleSheet = (params: {
     notch: {
       width: 40,
       height: 4,
-      borderRadius: 2,
+      borderRadius: 0,
       backgroundColor: colors.border.muted,
       alignSelf: 'center',
       marginVertical: 4,

@@ -68,7 +68,7 @@ const createStyles = (colors) =>
       marginVertical: 8,
       borderColor: colors.border.default,
       borderWidth: 1,
-      borderRadius: 8,
+      borderRadius: 0,
       flexDirection: 'row',
       backgroundColor: colors.background.default,
     },
@@ -137,7 +137,7 @@ const createStyles = (colors) =>
       position: 'relative',
       backgroundColor: colors.background.default,
       borderColor: colors.border.default,
-      borderRadius: 4,
+      borderRadius: 0,
       borderWidth: 1,
     },
     amounts: {
@@ -176,7 +176,7 @@ const createStyles = (colors) =>
     },
     errorWrapper: {
       backgroundColor: colors.error.muted,
-      borderRadius: 4,
+      borderRadius: 0,
       marginTop: 8,
     },
     errorText: {

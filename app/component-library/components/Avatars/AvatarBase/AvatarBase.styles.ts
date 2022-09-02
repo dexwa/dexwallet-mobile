@@ -29,7 +29,7 @@ const styleSheet = (params: {
       {
         height: sizeAsNum,
         width: sizeAsNum,
-        borderRadius: sizeAsNum / 2,
+        borderRadius: 0,
         overflow: 'hidden',
         backgroundColor: theme.colors.background.default,
       } as ViewStyle,

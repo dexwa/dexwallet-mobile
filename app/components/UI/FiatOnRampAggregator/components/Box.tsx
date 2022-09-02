@@ -18,7 +18,7 @@ const createStyles = (colors: Colors) =>
       padding: 16,
       borderWidth: 1.5,
       borderColor: colors.border.default,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     label: {
       marginVertical: 8,

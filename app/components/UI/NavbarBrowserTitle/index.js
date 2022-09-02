@@ -28,7 +28,7 @@ const createStyles = (colors) =>
       marginTop: 3,
       width: 5,
       height: 5,
-      borderRadius: 100,
+      borderRadius: 0,
       marginRight: 5,
     },
     currentUrlWrapper: {

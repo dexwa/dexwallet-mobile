@@ -58,7 +58,7 @@ const createStyles = (colors) =>
     skipButtonContainer: {
       height: 30,
       width: 120,
-      borderRadius: 15,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
     },
     skipButton: {
@@ -68,7 +68,7 @@ const createStyles = (colors) =>
     },
     androidElevated: {
       width: 120,
-      borderRadius: 30,
+      borderRadius: 0,
     },
     iosTouchable: {
       width: 120,

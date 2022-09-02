@@ -40,7 +40,7 @@ export const createStyles = (colors: any) =>
     } as any,
     searchWrapper: {
       flexDirection: 'row',
-      borderRadius: 30,
+      borderRadius: 0,
       backgroundColor: colors.background.alternative,
       height: Device.isAndroid() ? 40 : 30,
       flex: 1,

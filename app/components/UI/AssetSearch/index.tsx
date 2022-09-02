@@ -20,7 +20,7 @@ const createStyles = (colors: any) =>
       justifyContent: 'center',
       alignItems: 'center',
       borderWidth: 1,
-      borderRadius: 4,
+      borderRadius: 0,
       borderColor: colors.border.default,
       color: colors.text.default,
     },

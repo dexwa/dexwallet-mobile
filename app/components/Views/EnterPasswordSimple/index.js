@@ -30,7 +30,7 @@ const createStyles = (colors) =>
     },
     input: {
       borderWidth: 2,
-      borderRadius: 5,
+      borderRadius: 0,
       borderColor: colors.border.default,
       padding: 10,
       color: colors.text.default,

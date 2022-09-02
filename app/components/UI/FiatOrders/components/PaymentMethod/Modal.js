@@ -23,7 +23,7 @@ const createStyles = (colors) =>
       justifyContent: 'center',
       alignItems: 'center',
       marginVertical: 50,
-      borderRadius: 10,
+      borderRadius: 0,
       shadowColor: importedColors.black,
       shadowOffset: {
         width: 0,

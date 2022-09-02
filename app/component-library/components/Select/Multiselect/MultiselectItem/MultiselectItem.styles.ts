@@ -28,7 +28,7 @@ const styleSheet = (params: {
         flexDirection: 'row',
         alignItems: 'flex-start',
         padding: 16,
-        borderRadius: 4,
+        borderRadius: 0,
         backgroundColor: colors.background.default,
       } as ViewStyle,
       style,

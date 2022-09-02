@@ -11,7 +11,7 @@ const createStyles = (colors) =>
     modalContainer: {
       width: '100%',
       backgroundColor: colors.background.default,
-      borderRadius: 10,
+      borderRadius: 0,
     },
     modalView: {
       flexDirection: 'column',

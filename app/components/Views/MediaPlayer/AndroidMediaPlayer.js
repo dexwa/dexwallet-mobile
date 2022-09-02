@@ -42,7 +42,7 @@ const createStyles = (colors) =>
       bottom: 0,
       left: 0,
       backgroundColor: colors.background.alternative,
-      borderRadius: 12,
+      borderRadius: 0,
     },
     errorContainer: {
       top: 0,
@@ -120,7 +120,7 @@ const createStyles = (colors) =>
     seekbarFill: {
       height: 4,
       width: '100%',
-      borderRadius: 2,
+      borderRadius: 0,
       backgroundColor: importedColors.white,
     },
     seekbarPermanentFill: {
@@ -133,7 +133,7 @@ const createStyles = (colors) =>
       width: 28,
     },
     seekbarCircle: {
-      borderRadius: 14,
+      borderRadius: 0,
       top: 14,
       height: 14,
       width: 14,
@@ -142,7 +142,7 @@ const createStyles = (colors) =>
       width: 44,
       height: 44,
       backgroundColor: importedColors.blackTransparent,
-      borderRadius: 8,
+      borderRadius: 0,
     },
     actionSeeker: {
       flex: 1,

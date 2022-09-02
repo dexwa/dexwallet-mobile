@@ -9,8 +9,8 @@ const createStyles = (colors) =>
     root: {
       backgroundColor: colors.background.default,
       minHeight: 200,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
       paddingBottom: Device.isIphoneX() ? 24 : 0,
     },
     transactionEdit: {

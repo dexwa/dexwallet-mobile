@@ -55,7 +55,7 @@ const createStyles = (colors: Colors) =>
     },
     timerWrapper: {
       backgroundColor: colors.background.alternative,
-      borderRadius: 20,
+      borderRadius: 0,
       marginVertical: 12,
       paddingVertical: 4,
       paddingHorizontal: 15,

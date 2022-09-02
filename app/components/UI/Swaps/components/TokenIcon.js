@@ -12,13 +12,13 @@ const ethLogo = require('../../../../images/eth-logo.png');
 /* eslint-enable import/no-commonjs */
 
 const REGULAR_SIZE = 24;
-const REGULAR_RADIUS = 12;
+const REGULAR_RADIUS = 0;
 const MEDIUM_SIZE = 36;
-const MEDIUM_RADIUS = 18;
+const MEDIUM_RADIUS = 0;
 const BIG_SIZE = 50;
-const BIG_RADIUS = 25;
+const BIG_RADIUS = 0;
 const BIGGEST_SIZE = 70;
-const BIGGEST_RADIUS = 35;
+const BIGGEST_RADIUS = 0;
 
 const createStyles = (colors) =>
   StyleSheet.create({

@@ -27,7 +27,7 @@ const styleSheet = (params: {
       {
         position: 'relative',
         padding: 16,
-        borderRadius: 4,
+        borderRadius: 0,
         backgroundColor: colors.background.default,
       } as ViewStyle,
       style,
@@ -41,7 +41,7 @@ const styleSheet = (params: {
       marginVertical: 4,
       marginLeft: 4,
       width: 4,
-      borderRadius: 2,
+      borderRadius: 0,
       backgroundColor: colors.primary.default,
     },
   });

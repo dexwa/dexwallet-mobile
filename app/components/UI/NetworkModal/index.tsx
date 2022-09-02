@@ -36,7 +36,7 @@ const createStyles = (colors) =>
       margin: 0,
     },
     modalContainer: {
-      borderRadius: 10,
+      borderRadius: 0,
       backgroundColor: colors.background.default,
       padding: 20,
     },
@@ -60,7 +60,7 @@ const createStyles = (colors) =>
       justifyContent: 'flex-start',
       borderWidth: 1,
       borderColor: colors.text.muted,
-      borderRadius: 10,
+      borderRadius: 0,
       padding: 16,
       marginBottom: 10,
     },
@@ -81,7 +81,7 @@ const createStyles = (colors) =>
       marginRight: '15%',
       marginLeft: '15%',
       paddingVertical: 5,
-      borderRadius: 40,
+      borderRadius: 0,
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'row',
@@ -97,7 +97,7 @@ const createStyles = (colors) =>
       width: 20,
       height: 20,
       marginRight: 10,
-      borderRadius: 10,
+      borderRadius: 0,
     },
   });
 

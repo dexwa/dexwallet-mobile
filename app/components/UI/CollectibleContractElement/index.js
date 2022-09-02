@@ -64,7 +64,7 @@ const createStyles = (colors) =>
       backgroundColor: importedColors.yellow,
       width: 32,
       height: 32,
-      borderRadius: 16,
+      borderRadius: 0,
     },
   });
 

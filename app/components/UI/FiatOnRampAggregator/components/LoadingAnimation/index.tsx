@@ -35,14 +35,14 @@ const createStyles = (colors: Colors) =>
     progressWrapper: {
       backgroundColor: colors.primary.muted,
       height: 3,
-      borderRadius: 3,
+      borderRadius: 0,
       marginVertical: 15,
     },
     progressBar: {
       backgroundColor: colors.primary.default,
       height: 3,
       width: 3,
-      borderRadius: 3,
+      borderRadius: 0,
       flex: 1,
     },
     foxContainer: {

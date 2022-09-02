@@ -11,7 +11,7 @@ const createStyles = (colors) =>
     fallback: {
       alignContent: 'center',
       backgroundColor: colors.background.default,
-      borderRadius: 27,
+      borderRadius: 0,
       height: 54,
       justifyContent: 'center',
       width: 54,

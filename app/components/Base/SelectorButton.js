@@ -10,7 +10,7 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.alternative,
       paddingVertical: 8,
       paddingHorizontal: 10,
-      borderRadius: 100,
+      borderRadius: 0,
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',

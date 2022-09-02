@@ -74,7 +74,7 @@ const createStyles = (colors) =>
     input: {
       ...fontStyles.normal,
       borderColor: colors.border.default,
-      borderRadius: 5,
+      borderRadius: 0,
       borderWidth: 2,
       padding: 10,
       color: colors.text.default,
@@ -147,7 +147,7 @@ const createStyles = (colors) =>
       width: 20,
       height: 20,
       marginRight: 10,
-      borderRadius: 10,
+      borderRadius: 0,
     },
     popularWrapper: {
       flexDirection: 'row',

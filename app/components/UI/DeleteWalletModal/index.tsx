@@ -153,7 +153,7 @@ const DeleteWalletModal = () => {
               <Text style={styles.bold}>
                 {strings('login.recovery_phrase')}
               </Text>
-              <Text>{strings('login.metamask_does_not')}</Text>
+              <Text>{strings('login.dexwallet_does_not')}</Text>
             </Text>
           </View>
         </WarningExistingUserModal>

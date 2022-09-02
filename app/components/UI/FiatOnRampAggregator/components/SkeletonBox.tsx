@@ -7,7 +7,7 @@ const createStyles = (colors: Colors) =>
   StyleSheet.create({
     wrapper: {
       padding: 18,
-      borderRadius: 6,
+      borderRadius: 0,
       backgroundColor: colors.background.alternative,
     },
   });
