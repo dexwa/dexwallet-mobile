@@ -74,7 +74,7 @@ const createStyles = (colors) =>
     },
   });
 
-const LogoImage = require('../../../../images/dexwallet-main.png'); // eslint-disable-line import/no-commonjs
+const LogoImage = require('../../../../images/dexwallet-name.png'); // eslint-disable-line import/no-commonjs
 
 /**
  * View that contains app information

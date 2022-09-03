@@ -459,12 +459,12 @@ function LoadingAnimation({
         </View>
       </View>
       <View style={styles.foxContainer} pointerEvents="none">
-        <Fox
+        {/* <Fox
           ref={foxRef}
           customContent={backgroundShapes}
           customStyle={customStyle(colors)}
           renderLoading={() => null}
-        />
+        /> */}
         {renderLogos &&
           headPan &&
           metadata &&

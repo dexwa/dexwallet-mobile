@@ -34,13 +34,13 @@ const createStyles = (colors) =>
     wrapper: {
       backgroundColor: colors.background.default,
       flex: 1,
-      minHeight: 500,
-      marginTop: 16,
+      minHeight: 340,
+      // marginTop: 16,
     },
     emptyView: {
       justifyContent: 'center',
       alignItems: 'center',
-      marginTop: 10,
+      // marginTop: 10,
     },
     add: {
       flexDirection: 'row',

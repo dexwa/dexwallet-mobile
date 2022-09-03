@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const metamask_name = require('../../../images/metamask-name.png'); // eslint-disable-line
+const metamask_name = require('../../../images/dexwallet-name.png'); // eslint-disable-line
 const metamask_fox = require('../../../images/fox.png'); // eslint-disable-line
 /**
  * Function that returns the navigation options

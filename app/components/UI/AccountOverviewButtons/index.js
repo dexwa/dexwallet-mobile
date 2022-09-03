@@ -16,6 +16,10 @@ import Analytics from '../../../core/Analytics/Analytics';
 import AnalyticsV2 from '../../../util/analyticsV2';
 import AppConstants from '../../../core/AppConstants';
 import { strings } from '../../../../locales/i18n';
+import Svg, {
+  Use,
+  Image,
+} from 'react-native-svg';
 
 import { swapsLivenessSelector } from '../../../reducers/swaps';
 import { showAlert } from '../../../actions/alert';
@@ -53,7 +57,6 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.default,
     },
     wrapper: {
-      
       paddingTop: 20,
       paddingHorizontal: 20,
       paddingBottom: 0,
@@ -133,11 +136,10 @@ const createStyles = (colors) =>
     },
     actions: {
       flex: 1,
+      display:"flex",
       justifyContent: 'center',
       alignItems: 'flex-start',
       flexDirection: 'row',
-      // position: 'absolute',
-      // bottom: 0,
     },
   });
 
@@ -145,7 +147,7 @@ const createStyles = (colors) =>
  * View that's part of the <Wallet /> component
  * which shows information about the selected account
  */
-class AccountOverview extends PureComponent {
+class AccountOverviewButtons extends PureComponent {
   static propTypes = {
     /**
      * String that represents the selected address
@@ -382,105 +384,48 @@ class AccountOverview extends PureComponent {
     const isQRHardwareWalletAccount = isQRHardwareAccount(address);
 
     return (
-      <View
-        style={baseStyles.flexGrow}
-        ref={this.scrollViewContainer}
-        collapsable={false}
-      >
-        <ScrollView
-          bounces={false}
-          keyboardShouldPersistTaps={'never'}
-          style={styles.scrollView}
-          contentContainerStyle={styles.wrapper}
-          testID={'account-overview'}
-        >
-          <View style={styles.info} ref={this.mainView}>
-            <TouchableOpacity
-              style={styles.identiconBorder}
-              disabled={onboardingWizard}
-              onPress={this.toggleAccountsModal}
-              testID={'wallet-account-identicon'}
-            >
-              <Identicon
-                address={address}
-                diameter={38}
-                noFadeIn={onboardingWizard}
+      // <View
+      //   style={baseStyles.flexGrow}
+      //   ref={this.scrollViewContainer}
+      //   collapsable={false}
+      // >
+        
+     <View style={styles.actions}>
+              <AssetActionButton
+                icon="receive"
+                onPress={this.onReceive}
+                label={strings('asset_overview.receive_button')}
               />
-            </TouchableOpacity>
-            <View
-              ref={this.editableLabelRef}
-              style={styles.data}
-              collapsable={false}
-            >
-              {accountLabelEditable ? (
-                <TextInput
-                  style={[
-                    styles.label,
-                    styles.labelInput,
-                    styles.onboardingWizardLabel,
-                    onboardingWizard
-                      ? { borderColor: colors.primary.default }
-                      : { borderColor: colors.background.default },
-                  ]}
-                  editable={accountLabelEditable}
-                  onChangeText={this.onAccountLabelChange}
-                  onSubmitEditing={this.setAccountLabel}
-                  onBlur={this.setAccountLabel}
-                  testID={'account-label-text-input'}
-                  value={accountLabel}
-                  selectTextOnFocus
-                  ref={this.input}
-                  returnKeyType={'done'}
-                  autoCapitalize={'none'}
-                  autoCorrect={false}
-                  numberOfLines={1}
-                  placeholderTextColor={colors.text.muted}
-                  keyboardAppearance={themeAppearance}
+              {allowedToBuy(chainId) && (
+                <AssetActionButton
+                  icon="buy"
+                  onPress={this.onBuy}
+                  label={strings('asset_overview.buy_button')}
                 />
-              ) : (
-                <View style={styles.labelWrapper}>
-                  <TouchableOpacity onLongPress={this.setAccountLabelEditable}>
-                    <Text
-                      style={[
-                        styles.label,
-                        styles.onboardingWizardLabel,
-                        {
-                          borderColor: onboardingWizard
-                            ? colors.primary.default
-                            : colors.background.default,
-                        },
-                      ]}
-                      numberOfLines={1}
-                      testID={'edit-account-label'}
-                    >
-                      {isDefaultAccountName(name) && ens ? ens : name}
-                    </Text>
-                  </TouchableOpacity>
-                  {isQRHardwareWalletAccount && (
-                    <View style={styles.tag}>
-                      <Text style={styles.tagText}>
-                        {strings('transaction.hardware')}
-                      </Text>
-                    </View>
-                  )}
-                </View>
+              )}
+              <AssetActionButton
+                testID={'token-send-button'}
+                icon="send"
+                onPress={this.onSend}
+                label={strings('asset_overview.send_button')}
+              />
+              <View onclick={this.onSend}
+                label={strings('asset_overview.send_button')}>
+  <Svg width="80" height="80">
+     <Image href={require("../../../../logo.png")} />
+  </Svg>
+</View>
+
+              {AppConstants.SWAPS.ACTIVE && (
+                <AssetSwapButton
+                  isFeatureLive={swapsIsLive}
+                  isNetworkAllowed={isSwapsAllowed(chainId)}
+                  onPress={this.goToSwaps}
+                  isAssetAllowed
+                />
               )}
             </View>
-            <Text style={styles.amountFiat}>{fiatBalance}</Text>
-            <TouchableOpacity
-              style={styles.addressWrapper}
-              onPress={this.copyAccountToClipboard}
-            >
-              <EthereumAddress
-                address={address}
-                style={styles.address}
-                type={'short'}
-              />
-            </TouchableOpacity>
-
-          </View>
-        </ScrollView>
-      </View>
+          // </View  >
     );
   }
 }
@@ -506,6 +451,6 @@ const mapDispatchToProps = (dispatch) => ({
   toggleReceiveModal: (asset) => dispatch(toggleReceiveModal(asset)),
 });
 
-AccountOverview.contextType = ThemeContext;
+AccountOverviewButtons.contextType = ThemeContext;
 
-export default connect(mapStateToProps, mapDispatchToProps)(AccountOverview);
+export default connect(mapStateToProps, mapDispatchToProps)(AccountOverviewButtons);

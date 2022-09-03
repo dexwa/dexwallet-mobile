@@ -13,11 +13,15 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
+import {Dimensions} from 'react-native';
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 import { useSelector } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import DefaultTabBar from 'react-native-scrollable-tab-view/DefaultTabBar';
 import { fontStyles, baseStyles } from '../../../styles/common';
 import AccountOverview from '../../UI/AccountOverview';
+import AccountOverviewButtons from '../../UI/AccountOverviewButtons';
 import Tokens from '../../UI/Tokens';
 import { getWalletNavbarOptions } from '../../UI/Navbar';
 import { strings } from '../../../../locales/i18n';
@@ -40,6 +44,10 @@ const createStyles = (colors: any) =>
     wrapper: {
       flex: 1,
       backgroundColor: colors.background.default,
+    },
+    scrollbox: {
+      // width: screenWidth - 100,
+      height: screenHeight - 375
     },
     tabUnderlineStyle: {
       height: 2,
@@ -261,6 +269,7 @@ const Wallet = ({ navigation }: any) => {
     };
 
     return (
+      
       <View style={styles.wrapper}>
         <AccountOverview
           account={account}
@@ -271,6 +280,7 @@ const Wallet = ({ navigation }: any) => {
           renderTabBar={renderTabBar}
           // eslint-disable-next-line react/jsx-no-bind
           onChangeTab={onChangeTab}
+          // style={styles.scrollbox}
         >
           <Tokens
             tabLabel={strings('wallet.tokens')}
@@ -284,6 +294,10 @@ const Wallet = ({ navigation }: any) => {
             navigation={navigation}
           />
         </ScrollableTabView>
+        <AccountOverviewButtons
+                  account={account}
+                  navigation={navigation}
+                  onRef={onRef} />
       </View>
     );
   }, [

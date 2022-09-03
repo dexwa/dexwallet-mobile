@@ -126,10 +126,11 @@
     "import_from_seed_button": "Import using Secret Recovery Phrase"
   },
   "login": {
-    "title": "Welcome Back!",
+    "title": "Unlock the wallet!",
+    "title-tagline": "Connect with decentralized world",
     "password": "Password",
     "unlock_button": "UNLOCK",
-    "go_back": "Wallet won't unlock? You can ERASE your current wallet and setup a new one",
+    "go_back": "OR",
     "reset_wallet": "Reset Wallet",
     "cant_proceed": "You can’t proceed till you type the word ‘Delete’. With this action you are opting in to erase your current wallet.",
     "invalid_password": "Invalid password",

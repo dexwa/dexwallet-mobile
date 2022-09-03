@@ -98,14 +98,14 @@ const createStyles = (colors) =>
       paddingTop: Device.isAndroid() ? 5 : 0,
     },
     metamaskFox: {
-      height: 27,
-      width: 27,
+      height: 35,
+      width: 200,
       marginRight: 15,
     },
     metamaskName: {
       marginTop: 4,
-      width: 90,
-      height: 40,
+      width: 200,
+      height: 35,
       tintColor: colors.text.default,
     },
     account: {
@@ -306,8 +306,8 @@ const createStyles = (colors) =>
     protectWalletButtonWrapper: { marginVertical: 8 },
   });
 
-const dexwallet_name = require('../../../images/dexwallet-nav.png'); // eslint-disable-line
-// const metamask_fox = require('../../../images/fox.png'); // eslint-disable-line
+//const dexwallet_name = require('../../../images/dexwallet-name.png'); // eslint-disable-line
+ const metamask_fox = require('../../../images/dexwallet-name.png'); // eslint-disable-line
 const ICON_IMAGES = {
   wallet: require('../../../images/wallet-icon.png'), // eslint-disable-line
   'selected-wallet': require('../../../images/selected-wallet-icon.png'), // eslint-disable-line
@@ -1218,16 +1218,16 @@ class DrawerView extends PureComponent {
         <ScrollView>
           <View style={styles.header}>
             <View style={styles.metamaskLogo}>
-              {/* <Image
+              { <Image
                 source={metamask_fox}
                 style={styles.metamaskFox}
                 resizeMethod={'auto'}
-              /> */}
-              <Image
+              /> }
+              {/* <Image
                 source={dexwallet_name}
                 style={styles.metamaskName}
                 resizeMethod={'auto'}
-              />
+              /> */}
             </View>
           </View>
           <View style={styles.account}>

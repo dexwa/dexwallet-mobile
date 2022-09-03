@@ -31,17 +31,17 @@ const PASSWORD = `12345678`;
 const BINANCE_RPC_URL = 'https://bsc-dataseed1.binance.org';
 
 const BINANCE_DEEPLINK_URL =
-  'https://metamask.app.link/send/0xB8B4EE5B1b693971eB60bDa15211570df2dB228A@56?value=1e14';
+  'https://dexwallet.app.link/send/0xB8B4EE5B1b693971eB60bDa15211570df2dB228A@56?value=1e14';
 
 const POLYGON_DEEPLINK_URL =
-  'https://metamask.app.link/send/0x0000000000000000000000000000000000001010@137/transfer?address=0xC5b2b5ae370876c0122910F92a13bef85A133E56&uint256=3e18';
+  'https://dexwallet.app.link/send/0x0000000000000000000000000000000000001010@137/transfer?address=0xC5b2b5ae370876c0122910F92a13bef85A133E56&uint256=3e18';
 
 const ETHEREUM_DEEPLINK_URL =
-  'https://metamask.app.link/send/0x1FDb169Ef12954F20A15852980e1F0C122BfC1D6@1?value=1e13';
+  'https://dexwallet.app.link/send/0x1FDb169Ef12954F20A15852980e1F0C122BfC1D6@1?value=1e13';
 const GOERLI_DEEPLINK_URL =
-  'https://metamask.app.link/send/0x1FDb169Ef12954F20A15852980e1F0C122BfC1D6@5?value=1e13';
+  'https://dexwallet.app.link/send/0x1FDb169Ef12954F20A15852980e1F0C122BfC1D6@5?value=1e13';
 
-const DAPP_DEEPLINK_URL = 'https://metamask.app.link/dapp/app.sushi.com';
+const DAPP_DEEPLINK_URL = 'https://dexwallet.app.link/dapp/app.sushi.com';
 
 const networkNotFoundText = 'Network not found';
 const networkErrorBodyMessage =

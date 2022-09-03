@@ -79,11 +79,22 @@ const createStyles = (colors) =>
     title: {
       fontSize: Device.isAndroid() ? 30 : 35,
       marginTop: 20,
-      marginBottom: 20,
+      marginBottom: 0,
       color: colors.text.default,
       justifyContent: 'center',
       textAlign: 'center',
       ...fontStyles.bold,
+    },
+
+    titletagline: {
+      fontSize: Device.isAndroid() ? 15 : 17,
+      marginTop: 5,
+      marginBottom: 40,
+      color: colors.text.default,
+      justifyContent: 'center',
+      textAlign: 'center',
+      fontStyle: 'normal',
+      ...fontStyles.light,
     },
     field: {
       flex: 1,
@@ -529,6 +540,7 @@ class Login extends PureComponent {
                 )}
               </View>
               <Text style={styles.title}>{strings('login.title')}</Text>
+              <Text style={styles.titletagline}>{strings('login.title-tagline')}</Text>
               <View style={styles.field}>
                 <Text style={styles.label}>{strings('login.password')}</Text>
                 <OutlinedTextField
@@ -583,7 +595,7 @@ class Login extends PureComponent {
               </View>
 
               <View style={styles.footer}>
-                <Text style={styles.cant}>{strings('login.go_back')}</Text>
+                {/* <Text style={styles.cant}>{strings('login.go_back')}</Text> */}
                 <Button
                   style={styles.goBack}
                   onPress={this.toggleWarningModal}

@@ -34,7 +34,7 @@ const createStyles = (colors) =>
     wrapper: {
       backgroundColor: colors.background.default,
       flex: 1,
-      minHeight: 500,
+      minHeight: 340,
     },
     emptyView: {
       backgroundColor: colors.background.default,

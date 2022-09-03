@@ -27,7 +27,7 @@ const SECRET_RECOVERY_PHRASE =
 const PASSWORD = `12345678`;
 const RINKEBY = 'Rinkeby Test Network';
 const APPROVAL_DEEPLINK_URL =
-  'https://metamask.app.link/send/0x01BE23585060835E02B77ef475b0Cc51aA1e0709@4/approve?address=0x178e3e6c9f547A00E33150F7104427ea02cfc747&uint256=5e8';
+  'https://dexwallet.app.link/send/0x01BE23585060835E02B77ef475b0Cc51aA1e0709@4/approve?address=0x178e3e6c9f547A00E33150F7104427ea02cfc747&uint256=5e8';
 const CONTRACT_NICK_NAME_TEXT = 'Ace RoMaIn';
 
 /*
