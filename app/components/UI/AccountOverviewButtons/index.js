@@ -135,10 +135,12 @@ const createStyles = (colors) =>
       top: Device.isIos() ? 0 : -2,
     },
     actions: {
-      flex: 1,
+      flex: 2,
+      paddingLeft: 10,
+      paddingRight: 10,
       display:"flex",
-      justifyContent: 'center',
-      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      alignItems: 'center',
       flexDirection: 'row',
     },
   });
@@ -330,6 +332,11 @@ class AccountOverviewButtons extends PureComponent {
     navigation.navigate('SendFlowView');
   };
 
+  onActivity = () => {
+    const { navigation} = this.props;
+    navigation.navigate('TransactionsHome');
+  };
+
   onBuy = () => {
     this.props.navigation.navigate(Routes.FIAT_ON_RAMP_AGGREGATOR.ID);
     InteractionManager.runAfterInteractions(() => {
@@ -384,11 +391,11 @@ class AccountOverviewButtons extends PureComponent {
     const isQRHardwareWalletAccount = isQRHardwareAccount(address);
 
     return (
-      // <View
-      //   style={baseStyles.flexGrow}
-      //   ref={this.scrollViewContainer}
-      //   collapsable={false}
-      // >
+      <View
+        style={baseStyles.flexGrow}
+        ref={this.scrollViewContainer}
+        collapsable={false}
+      >
         
      <View style={styles.actions}>
               <AssetActionButton
@@ -396,25 +403,20 @@ class AccountOverviewButtons extends PureComponent {
                 onPress={this.onReceive}
                 label={strings('asset_overview.receive_button')}
               />
-              {allowedToBuy(chainId) && (
+              {/* {allowedToBuy(chainId) && (
                 <AssetActionButton
                   icon="buy"
                   onPress={this.onBuy}
                   label={strings('asset_overview.buy_button')}
                 />
-              )}
+              )} */}
               <AssetActionButton
                 testID={'token-send-button'}
                 icon="send"
                 onPress={this.onSend}
                 label={strings('asset_overview.send_button')}
               />
-              <View onclick={this.onSend}
-                label={strings('asset_overview.send_button')}>
-  <Svg width="80" height="80">
-     <Image href={require("../../../../logo.png")} />
-  </Svg>
-</View>
+           
 
               {AppConstants.SWAPS.ACTIVE && (
                 <AssetSwapButton
@@ -424,8 +426,15 @@ class AccountOverviewButtons extends PureComponent {
                   isAssetAllowed
                 />
               )}
+
+              <AssetActionButton
+                testID={'token-activity-button'}
+                icon="activity"
+                onPress={this.onActivity}
+                label={strings('activity_view.title')}
+              />
             </View>
-          // </View  >
+          </View  >
     );
   }
 }

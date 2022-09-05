@@ -5,10 +5,6 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { strings } from '../../../../../locales/i18n';
 import {
-  KEYSTONE_SUPPORT,
-  KEYSTONE_SUPPORT_VIDEO,
-} from '../../../../constants/urls';
-import {
   fontStyles,
   colors as importedColors,
 } from '../../../../styles/common';
@@ -21,7 +17,7 @@ interface IConnectQRInstructionProps {
   renderAlert: () => Element;
 }
 
-const connectQRHardwareImg = require('images/connect-qr-hardware.png'); // eslint-disable-line import/no-commonjs
+const connectQRHardwareImg = require('images/connect-qr-hardware-new.png'); // eslint-disable-line import/no-commonjs
 
 const createStyles = (colors: any) =>
   StyleSheet.create({
@@ -86,24 +82,6 @@ const ConnectQRInstruction = (props: IConnectQRInstructionProps) => {
   const { colors } = useTheme();
   const styles = createStyles(colors);
 
-  const navigateToVideo = () => {
-    navigation.navigate('Webview', {
-      screen: 'SimpleWebview',
-      params: {
-        url: KEYSTONE_SUPPORT_VIDEO,
-        title: strings('connect_qr_hardware.description2'),
-      },
-    });
-  };
-  const navigateToTutorial = () => {
-    navigation.navigate('Webview', {
-      screen: 'SimpleWebview',
-      params: {
-        url: KEYSTONE_SUPPORT,
-        title: strings('connect_qr_hardware.description4'),
-      },
-    });
-  };
   return (
     <View style={styles.wrapper}>
       <ScrollView
@@ -116,14 +94,8 @@ const ConnectQRInstruction = (props: IConnectQRInstructionProps) => {
           <Text style={styles.text}>
             {strings('connect_qr_hardware.description1')}
           </Text>
-          <Text style={[styles.text, styles.link]} onPress={navigateToVideo}>
-            {strings('connect_qr_hardware.description2')}
-          </Text>
           <Text style={styles.text}>
             {strings('connect_qr_hardware.description3')}
-          </Text>
-          <Text style={[styles.text, styles.link]} onPress={navigateToTutorial}>
-            {strings('connect_qr_hardware.description4')}
           </Text>
           <Text style={styles.text}>
             {strings('connect_qr_hardware.description5')}

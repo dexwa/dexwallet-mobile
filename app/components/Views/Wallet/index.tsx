@@ -47,7 +47,7 @@ const createStyles = (colors: any) =>
     },
     scrollbox: {
       // width: screenWidth - 100,
-      height: screenHeight - 375
+      height: screenHeight - 340
     },
     tabUnderlineStyle: {
       height: 2,
@@ -359,5 +359,7 @@ const Wallet = ({ navigation }: any) => {
     </ErrorBoundary>
   );
 };
+
+
 
 export default Wallet;

@@ -381,6 +381,7 @@ class AccountOverview extends PureComponent {
 
     const isQRHardwareWalletAccount = isQRHardwareAccount(address);
 
+
     return (
       <View
         style={baseStyles.flexGrow}
@@ -466,7 +467,7 @@ class AccountOverview extends PureComponent {
                 </View>
               )}
             </View>
-            <Text style={styles.amountFiat}>{fiatBalance}</Text>
+            <Text style={styles.amountFiat}>{fiatBalance.toLocaleString(undefined, { minimumFractionDigits: 9 })}</Text>
             <TouchableOpacity
               style={styles.addressWrapper}
               onPress={this.copyAccountToClipboard}

@@ -113,6 +113,9 @@ const createStyles = (colors) =>
       backgroundColor: colors.background.alternative,
     },
     accountBgOverlay: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
       borderBottomColor: colors.border.muted,
       borderBottomWidth: 1,
       padding: 17,
@@ -121,6 +124,7 @@ const createStyles = (colors) =>
       marginBottom: 12,
       width: 56,
       height: 56,
+      marginRight: 20,
     },
     identiconBorder: {
       borderRadius: 0,
@@ -164,8 +168,16 @@ const createStyles = (colors) =>
       alignItems: 'center',
       justifyContent: 'center',
       borderBottomColor: colors.border.muted,
+      borderBottomWidth: 0,
+      padding: 8,
+    },
+    buttons2: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderBottomColor: colors.border.muted,
       borderBottomWidth: 1,
-      padding: 15,
+      padding: 8,
     },
     button: {
       flex: 1,
@@ -970,13 +982,6 @@ class DrawerView extends PureComponent {
     return [
       [
         {
-          name: strings('drawer.browser'),
-          icon: this.getIcon('globe'),
-          selectedIcon: this.getSelectedIcon('globe'),
-          action: this.goToBrowser,
-          routeNames: ['BrowserView', 'AddBookmark'],
-        },
-        {
           name: strings('drawer.wallet'),
           icon: this.getImageIcon('wallet'),
           selectedIcon: this.getSelectedImageIcon('wallet'),
@@ -990,20 +995,6 @@ class DrawerView extends PureComponent {
           ],
         },
         {
-          name: strings('drawer.transaction_activity'),
-          icon: this.getFeatherIcon('list'),
-          selectedIcon: this.getSelectedFeatherIcon('list'),
-          action: this.goToTransactionHistory,
-          routeNames: ['TransactionsView'],
-        },
-      ],
-      [
-        {
-          name: strings('drawer.share_address'),
-          icon: this.getMaterialIcon('share-variant'),
-          action: this.onShare,
-        },
-        {
           name:
             (blockExplorer &&
               `${strings('drawer.view_in')} ${blockExplorerName}`) ||
@@ -1011,6 +1002,28 @@ class DrawerView extends PureComponent {
           icon: this.getIcon('eye'),
           action: this.viewInEtherscan,
         },
+        // {
+        //   name: strings('drawer.browser'),
+        //   icon: this.getIcon('globe'),
+        //   selectedIcon: this.getSelectedIcon('globe'),
+        //   action: this.goToBrowser,
+        //   routeNames: ['BrowserView', 'AddBookmark'],
+        // },
+        // {
+        //   name: strings('drawer.transaction_activity'),
+        //   icon: this.getFeatherIcon('list'),
+        //   selectedIcon: this.getSelectedFeatherIcon('list'),
+        //   action: this.goToTransactionHistory,
+        //   routeNames: ['TransactionsView'],
+        // },
+      ],
+      [
+        // {
+        //   name: strings('drawer.share_address'),
+        //   icon: this.getMaterialIcon('share-variant'),
+        //   action: this.onShare,
+        // },
+        
       ],
       [
         {
@@ -1296,6 +1309,44 @@ class DrawerView extends PureComponent {
                 />
                 <Text style={styles.buttonText}>
                   {strings('drawer.receive_button')}
+                </Text>
+              </View>
+            </StyledButton>
+          </View>
+          <View style={styles.buttons2}>
+            <StyledButton
+              type={'rounded-normal'}
+              onPress={this.onShare}
+              containerStyle={[styles.button, styles.leftButton]}
+              testID={'drawer-send-button'}
+            >
+              <View style={styles.buttonContent}>
+                <MaterialIcon
+                  name={'link'}
+                  size={22}
+                  color={colors.primary.default}
+                  style={styles.buttonIcon}
+                />
+                <Text style={styles.buttonText}>
+                  {strings('account_details.share_account')}
+                </Text>
+              </View>
+            </StyledButton>
+            <StyledButton
+              type={'rounded-normal'}
+              onPress={this.goToBrowser}
+              containerStyle={[styles.button, styles.rightButton]}
+              testID={'drawer-receive-button'}
+            >
+              <View style={styles.buttonContent}>
+                <MaterialIcon
+                  name={'earth'}
+                  size={22}
+                  color={colors.primary.default}
+                  style={[styles.buttonIcon, styles.buttonReceive]}
+                />
+                <Text style={styles.buttonText}>
+                  {strings('drawer.browser')}
                 </Text>
               </View>
             </StyledButton>

@@ -322,7 +322,7 @@ class ReceiveRequest extends PureComponent {
             </TouchableOpacity>
           </TouchableOpacity>
           <View style={styles.actionRow}>
-            {allowedToBuy(this.props.network) && (
+            {/* {allowedToBuy(this.props.network) && (
               <StyledButton
                 type={'blue'}
                 containerStyle={styles.actionButton}
@@ -332,7 +332,7 @@ class ReceiveRequest extends PureComponent {
                   ticker: getTicker(this.props.ticker),
                 })}
               </StyledButton>
-            )}
+            )} */}
             <StyledButton
               type={'normal'}
               onPress={this.onReceive}

@@ -1655,12 +1655,6 @@ function SwapsQuotesView({
               {!hasEnoughTokenBalance
                 ? `${strings('swaps.more_to_complete')} `
                 : `${strings('swaps.more_gas_to_complete')} `}
-              {(isSwapsNativeAsset(sourceToken) ||
-                (hasEnoughTokenBalance && !hasEnoughEthBalance)) && (
-                <Text link underline small onPress={buyEth}>
-                  {strings('swaps.buy_more', { ticker: getTicker(ticker) })}
-                </Text>
-              )}
             </Alert>
           </View>
         )}

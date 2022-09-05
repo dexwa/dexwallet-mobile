@@ -7,6 +7,7 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 import Device from '../../../util/device';
 import Text from '../../Base/Text';
 import { useTheme } from '../../../util/theme';
+import {SendIcon, SwapIcon, ReceiveIcon, ActivityIcon} from './Icons';
 
 const createStyles = (colors) =>
   StyleSheet.create({
@@ -28,19 +29,19 @@ const createStyles = (colors) =>
       paddingLeft: 1,
       justifyContent: 'center',
       alignContent: 'center',
-      backgroundColor: colors.primary.default,
+      // backgroundColor: colors.primary.default,
     },
     buttonIcon: {
       justifyContent: 'center',
       alignContent: 'center',
       textAlign: 'center',
-      color: colors.primary.inverse,
+      color: colors.primary.default,
     },
     buttonText: {
       marginTop: 8,
       marginHorizontal: 3,
       color: colors.primary.default,
-      fontSize: 14,
+      fontSize: 16,
     },
     receive: {
       right: Device.isIos() ? 1 : 0,
@@ -67,21 +68,17 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
     switch (type) {
       case 'send': {
         return (
-          <MaterialCommunityIcon
-            name={'arrow-top-right'}
-            size={20}
-            style={styles.buttonIcon}
-          />
+          <SendIcon />
         );
       }
       case 'receive': {
         return (
-          <MaterialCommunityIcon
-            name={'keyboard-tab'}
-            size={20}
-            color={colors.primary.inverse}
-            style={[styles.buttonIcon, styles.receive]}
-          />
+          <ReceiveIcon />
+        );
+      }
+      case 'activity': {
+        return (
+          <ActivityIcon />
         );
       }
       case 'add': {
@@ -94,20 +91,12 @@ function AssetActionButton({ onPress, icon, label, disabled }) {
       }
       case 'swap': {
         return (
-          <MaterialCommunityIcon
-            name="repeat"
-            size={22}
-            style={[styles.buttonIcon, styles.swapsIcon]}
-          />
+          <SwapIcon />
         );
       }
       case 'buy': {
         return (
-          <FeatherIcon
-            name="credit-card"
-            size={20}
-            style={[styles.buttonIcon, styles.buyIcon]}
-          />
+          <ReceiveIcon />
         );
       }
       default: {

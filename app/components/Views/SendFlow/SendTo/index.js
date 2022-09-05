@@ -891,8 +891,6 @@ class SendFlow extends PureComponent {
                         {strings('transaction.not_enough_for_gas', {
                           ticker: getTicker(ticker),
                         })}
-
-                        {this.renderBuyEth()}
                       </>
                     }
                   />

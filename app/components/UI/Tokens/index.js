@@ -289,7 +289,7 @@ class Tokens extends PureComponent {
           <Text
             style={isTestNet(chainId) ? styles.testNetBalance : styles.balance}
           >
-            {mainBalance}
+            {mainBalance.toLocaleString(undefined, { minimumFractionDigits: 9 })}
           </Text>
           {secondaryBalance ? (
             <Text
@@ -298,7 +298,7 @@ class Tokens extends PureComponent {
                 asset?.balanceError && styles.balanceFiatTokenError,
               ]}
             >
-              {secondaryBalance}
+              {secondaryBalance.toLocaleString(undefined, { minimumFractionDigits: 9 })}
             </Text>
           ) : null}
         </View>

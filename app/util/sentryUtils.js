@@ -2,7 +2,7 @@
 import * as Sentry from '@sentry/react-native';
 import { Dedupe, ExtraErrorData } from '@sentry/integrations';
 
-const METAMASK_ENVIRONMENT = process.env['METAMASK_ENVIRONMENT'] || 'local'; // eslint-disable-line dot-notation
+const METAMASK_ENVIRONMENT = 'production'; // eslint-disable-line dot-notation
 const SENTRY_DSN_PROD =
   'https://ae39e4b08d464bba9fbf121c85ccfca0@sentry.io/2299799'; // metamask-mobile
 const SENTRY_DSN_DEV =
