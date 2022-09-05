@@ -4,9 +4,9 @@ import { Dedupe, ExtraErrorData } from '@sentry/integrations';
 
 const METAMASK_ENVIRONMENT = 'production'; // eslint-disable-line dot-notation
 const SENTRY_DSN_PROD =
-  'https://ae39e4b08d464bba9fbf121c85ccfca0@sentry.io/2299799'; // metamask-mobile
+  'https://acd50db992874487a28e5e7e2ea9c98c@o1395217.ingest.sentry.io/6719156'; // metamask-mobile
 const SENTRY_DSN_DEV =
-  'https://332890de43e44fe2bc070bb18d0934ea@sentry.io/2651591'; // test-metamask-mobile
+  'https://acd50db992874487a28e5e7e2ea9c98c@o1395217.ingest.sentry.io/6719156'; // test-metamask-mobile
 /**
  * Required instrumentation for Sentry Performance to work with React Navigation
  */
@@ -22,6 +22,7 @@ export function setupSentry() {
     dsn,
     debug: __DEV__,
     environment,
+    enabled:false,
     integrations: [
       new Dedupe(),
       new ExtraErrorData(),
