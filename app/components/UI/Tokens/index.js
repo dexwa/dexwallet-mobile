@@ -448,7 +448,7 @@ class Tokens extends PureComponent {
     const themeAppearance = this.context.themeAppearance;
 
     return (
-      <ScrollView contentContainerStyle={styles.wrapper} testID={'tokens'} persistentScrollbar={true}>
+      <ScrollView contentContainerStyle={styles.wrapper} testID={'tokens'} showsVerticalScrollIndicator={true} persistentScrollbar={true}>
         {tokens && tokens.length ? this.renderList() : this.renderEmpty()}
         <ActionSheet
           ref={this.createActionSheetRef}
