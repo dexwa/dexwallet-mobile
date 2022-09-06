@@ -38,16 +38,32 @@ import { useTheme } from '../../../util/theme';
 import { shouldShowWhatsNewModal } from '../../../util/onboarding';
 import Logger from '../../../util/Logger';
 import Routes from '../../../constants/navigation/Routes';
+import { BottomTabBar } from '@react-navigation/bottom-tabs';
 
 const createStyles = (colors: any) =>
   StyleSheet.create({
     wrapper: {
-      flex: 1,
+      flex: 2,
+      display: 'flex',
+      justifyContent: 'space-between',
+      height: '100%',
       backgroundColor: colors.background.default,
     },
+    accounts_area:{
+      flexDirection: 'row',
+   
+      alignItems: 'flex-start',
+    },
     scrollbox: {
-      // width: screenWidth - 100,
-      height: screenHeight - 340
+      flexDirection: 'row',
+      overflow:"scroll",
+      alignItems: 'stretch',
+      height:"50%"
+    },
+    menu_buttons:{
+      flexDirection: 'row',
+   
+      alignItems: 'flex-end',
     },
     tabUnderlineStyle: {
       height: 2,
@@ -269,19 +285,20 @@ const Wallet = ({ navigation }: any) => {
     };
 
     return (
-      
       <View style={styles.wrapper}>
+      <View style={styles.accounts_area}>
+      
         <AccountOverview
           account={account}
           navigation={navigation}
-          onRef={onRef}
-        />
+          onRef={onRef} /> 
+      </View>    
+      <View style={styles.scrollbox}>
+      
         <ScrollableTabView
           renderTabBar={renderTabBar}
-          // eslint-disable-next-line react/jsx-no-bind
           onChangeTab={onChangeTab}
-          // style={styles.scrollbox}
-        >
+          >
           <Tokens
             tabLabel={strings('wallet.tokens')}
             key={'tokens-tab'}
@@ -294,10 +311,11 @@ const Wallet = ({ navigation }: any) => {
             navigation={navigation}
           />
         </ScrollableTabView>
+      </View>
         <AccountOverviewButtons
-                  account={account}
-                  navigation={navigation}
-                  onRef={onRef} />
+              account={account}
+              navigation={navigation}
+              onRef={onRef} />
       </View>
     );
   }, [
@@ -342,7 +360,7 @@ const Wallet = ({ navigation }: any) => {
     <ErrorBoundary view="Wallet">
       <View style={baseStyles.flexGrow} testID={'wallet-screen'}>
         <ScrollView
-          style={styles.wrapper}
+          contentContainerStyle={styles.wrapper}
           refreshControl={
             <RefreshControl
               colors={[colors.primary.default]}

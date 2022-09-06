@@ -56,92 +56,17 @@ const createStyles = (colors) =>
     scrollView: {
       backgroundColor: colors.background.default,
     },
-    wrapper: {
-      paddingTop: 20,
-      paddingHorizontal: 20,
-      paddingBottom: 0,
-      alignItems: 'center',
-    },
-    info: {
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-    },
-    data: {
-      textAlign: 'center',
-      paddingTop: 7,
-    },
-    label: {
-      fontSize: 24,
-      textAlign: 'center',
-      ...fontStyles.normal,
-      color: colors.text.default,
-    },
-    labelInput: {
-      marginBottom: Device.isAndroid() ? -10 : 0,
-    },
-    labelWrapper: {
-      flexDirection: 'row',
-    },
-    tag: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      marginTop: 2,
-      padding: 4,
-      paddingHorizontal: 8,
-      borderWidth: 1,
-      borderColor: colors.text.default,
-      height: 28,
-      borderRadius: 0,
-    },
-    tagText: {
-      fontSize: 12,
-      ...fontStyles.bold,
-      minWidth: 32,
-      textAlign: 'center',
-      color: colors.text.default,
-    },
-    addressWrapper: {
-      backgroundColor: colors.primary.muted,
-      borderRadius: 0,
-      marginTop: 20,
-      marginBottom: 20,
-      paddingVertical: 7,
-      paddingHorizontal: 15,
-    },
-    address: {
-      fontSize: 12,
-      color: colors.text.default,
-      ...fontStyles.normal,
-      letterSpacing: 0.8,
-    },
-    amountFiat: {
-      fontSize: 12,
-      paddingTop: 5,
-      color: colors.text.alternative,
-      ...fontStyles.normal,
-    },
-    identiconBorder: {
-      borderRadius: 0,
-      borderWidth: 2,
-      padding: 2,
-      borderColor: colors.primary.default,
-    },
-    onboardingWizardLabel: {
-      borderWidth: 2,
-      borderRadius: 0,
-      paddingVertical: Device.isIos() ? 2 : -4,
-      paddingHorizontal: Device.isIos() ? 5 : 5,
-      top: Device.isIos() ? 0 : -2,
-    },
-    actions: {
-      flex: 2,
+    button_actions: {
       paddingLeft: 10,
       paddingRight: 10,
+      paddingBottom: 5,
+      paddingTop: 10,
       display:"flex",
-      justifyContent: 'space-between',
-      alignItems: 'center',
+      justifyContent: 'space-evenly',
       flexDirection: 'row',
+      width: '100%',
+      height:68,
+      backgroundColor: 'black',
     },
   });
 
@@ -392,12 +317,12 @@ class AccountOverviewButtons extends PureComponent {
 
     return (
       <View
-        style={baseStyles.flexGrow}
+      
         ref={this.scrollViewContainer}
         collapsable={false}
       >
         
-     <View style={styles.actions}>
+     <View style={styles.button_actions}>
               <AssetActionButton
                 icon="receive"
                 onPress={this.onReceive}

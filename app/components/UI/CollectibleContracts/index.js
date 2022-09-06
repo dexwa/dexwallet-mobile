@@ -4,6 +4,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   View,
+  ScrollView,
   InteractionManager,
   Image,
 } from 'react-native';
@@ -33,9 +34,6 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      flex: 1,
-      minHeight: 340,
-      // marginTop: 16,
     },
     emptyView: {
       justifyContent: 'center',
@@ -252,7 +250,7 @@ const CollectibleContracts = ({
   );
 
   return (
-    <View style={styles.wrapper} testID={'collectible-contracts'}>
+    <ScrollView contentContainerStyle={styles.wrapper} testID={'collectible-contracts'}>
       {isMainNet(chainId) &&
         !nftDetectionDismissed &&
         !useCollectibleDetection && (
@@ -265,7 +263,7 @@ const CollectibleContracts = ({
         )}
       {collectibleContracts.length > 0 ? renderList() : renderEmpty()}
       {renderFooter()}
-    </View>
+    </ScrollView>
   );
 };
 

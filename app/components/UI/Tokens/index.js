@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   TouchableOpacity,
   StyleSheet,
-  View,
+  View,ScrollView,
   InteractionManager,
 } from 'react-native';
 import TokenImage from '../TokenImage';
@@ -33,8 +33,8 @@ const createStyles = (colors) =>
   StyleSheet.create({
     wrapper: {
       backgroundColor: colors.background.default,
-      flex: 1,
-      minHeight: 340,
+      overflow: 'scroll',
+
     },
     emptyView: {
       backgroundColor: colors.background.default,
@@ -448,7 +448,7 @@ class Tokens extends PureComponent {
     const themeAppearance = this.context.themeAppearance;
 
     return (
-      <View style={styles.wrapper} testID={'tokens'}>
+      <ScrollView contentContainerStyle={styles.wrapper} testID={'tokens'} persistentScrollbar={true}>
         {tokens && tokens.length ? this.renderList() : this.renderEmpty()}
         <ActionSheet
           ref={this.createActionSheetRef}
@@ -459,7 +459,7 @@ class Tokens extends PureComponent {
           onPress={this.onActionSheetPress}
           theme={themeAppearance}
         />
-      </View>
+      </ScrollView>
     );
   };
 }
