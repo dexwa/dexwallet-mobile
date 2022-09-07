@@ -1389,7 +1389,7 @@ export const BrowserTab = (props) => {
         {isTabActive() && renderPhishingModal()}
         {isTabActive() && renderOptions()}
         {isTabActive() && renderBottomBar()}
-        {isTabActive() && renderOnboardingWizard()}
+        {/* {isTabActive() && renderOnboardingWizard()} */}
       </View>
     </ErrorBoundary>
   );
@@ -1527,7 +1527,7 @@ const mapDispatchToProps = (dispatch) => ({
   addToBrowserHistory: ({ url, name }) => dispatch(addToHistory({ url, name })),
   addToWhitelist: (url) => dispatch(addToWhitelist(url)),
   toggleNetworkModal: () => dispatch(toggleNetworkModal()),
-  setOnboardingWizardStep: (step) => dispatch(setOnboardingWizardStep(step)),
+  // setOnboardingWizardStep: (step) => dispatch(setOnboardingWizardStep(step)),
 });
 
 export default connect(

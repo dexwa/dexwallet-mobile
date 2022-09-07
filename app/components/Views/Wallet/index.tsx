@@ -372,7 +372,7 @@ const Wallet = ({ navigation }: any) => {
         >
           {selectedAddress ? renderContent() : renderLoader()}
         </ScrollView>
-        {renderOnboardingWizard()}
+        {/* {renderOnboardingWizard()} */}
       </View>
     </ErrorBoundary>
   );

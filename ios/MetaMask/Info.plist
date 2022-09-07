@@ -115,7 +115,7 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>branch_key</key>
-	<string>$(MM_BRANCH_KEY_LIVE)</string>
+	<string>key_live_nb57o0uCPNHusdutEBDhqnbcsshbFgbR</string>
 	<key>fox_code</key>
 	<string>$(MM_FOX_CODE)</string>
 	<key>mixpanel_token</key>

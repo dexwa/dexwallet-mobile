@@ -57,8 +57,8 @@ export default {
       'https://swap.metaswap-dev.codefi.network/moonpaySign',
     WYRE_API_ENDPOINT: 'https://api.sendwyre.com/',
     WYRE_API_ENDPOINT_TEST: 'https://api.testwyre.com/',
-    WYRE_MERCHANT_ID: 'merchant.io.metamask.wyre',
-    WYRE_MERCHANT_ID_TEST: 'merchant.io.metamask.wyre.test',
+    WYRE_MERCHANT_ID: 'merchant.com.dexwallet.wyre',
+    WYRE_MERCHANT_ID_TEST: 'merchant.com.dexwallet.wyre.test',
     POLLING_FREQUENCY: 10000,
   },
   DEEPLINKS: {
@@ -84,7 +84,7 @@ export default {
       'https://dexwallet.com/support/hc/en-us/articles/360059386712',
     NFT: 'https://dexwallet.com/support/hc/en-us/articles/NFT-tokens-in-DexWallet-wallet',
     SECURITY:
-        'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-and-Security-Tips-for-DexWallet',
+        'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-Tips',
     TOKEN_BALANCE:
       'https://dexwallet.com/support/hc/en-us/articles/What-to-do-when-your-balance-of-ETH-and-or-ERC20-tokens-is-incorrect-inaccurate',
     MM_FAUCET: 'https://faucet.dexwallet.com/',

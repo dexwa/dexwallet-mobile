@@ -6,7 +6,7 @@ export const NON_CUSTODIAL_WALLET_URL =
 export const KEEP_SRP_SAFE_URL =
   'https://dexwallet.com/support/hc/en-us/articles/Scammers-and-Phishers-Rugpulls-and-airdrop-scams';
 export const LEARN_MORE_URL =
-  'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-and-Security-Tips-for-MetaMask';
+  'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-Tips';
 
 // Policies
 export const CONSENSYS_PRIVACY_POLICY = 'https://dexwallet.com/privacy-policy/';

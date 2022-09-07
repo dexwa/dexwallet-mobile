@@ -1,4 +1,4 @@
-package io.metamask;
+package com.dexwallet;
 
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactActivity;

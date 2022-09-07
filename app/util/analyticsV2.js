@@ -138,6 +138,7 @@ export const ANALYTICS_EVENTS_V2 = {
   ANDROID_HARDWARE_KEYSTORE: generateOpt('Android Hardware Keystore'),
   // QR Hardware Wallet
   CONNECT_HARDWARE_WALLET: generateOpt('Clicked Connect Hardware Wallet'),
+  IMPORT_TOKENS: generateOpt('Clicked Import tokens button'),
   CONTINUE_QR_HARDWARE_WALLET: generateOpt(
     'Clicked Continue QR Hardware Wallet',
   ),

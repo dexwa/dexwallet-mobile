@@ -53,7 +53,7 @@ const createStyles = (colors) =>
       flex: 1,
     },
     footer: {
-      height: Device.isIphoneX() ? 200 : 170,
+      height: Device.isIphoneX() ? 250 : 220,
       paddingBottom: Device.isIphoneX() ? 30 : 0,
       justifyContent: 'center',
       flexDirection: 'column',
@@ -107,6 +107,7 @@ class AccountList extends PureComponent {
      * function to be called when connect to a QR hardware
      */
     onConnectHardware: PropTypes.func,
+    onImportTokensBlockie: PropTypes.func,
     /**
      * Current provider ticker
      */
@@ -219,6 +220,13 @@ class AccountList extends PureComponent {
     this.props.onConnectHardware();
     AnalyticsV2.trackEvent(
       AnalyticsV2.ANALYTICS_EVENTS.CONNECT_HARDWARE_WALLET,
+    );
+  };
+
+  importTokens = () => {
+    this.props.onImportTokensBlockie();
+    AnalyticsV2.trackEvent(
+      AnalyticsV2.ANALYTICS_EVENTS.IMPORT_TOKENS,
     );
   };
 
@@ -455,6 +463,15 @@ class AccountList extends PureComponent {
             >
               <Text style={styles.btnText}>
                 {strings('accounts.connect_hardware')}
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={this.importTokens}
+              style={styles.footerButton}
+              testID={'connect-hardware'}
+            >
+              <Text style={styles.btnText}>
+                {strings('drawer.import_tokens')}
               </Text>
             </TouchableOpacity>
           </View>

@@ -860,6 +860,17 @@ class DrawerView extends PureComponent {
     this.hideDrawer();
   };
 
+  onImportTokens = () => {
+    this.props.navigation.navigate('AddAsset', { assetType: 'token' });
+    this.hideDrawer();
+  }
+
+  onImportTokensBlockie = () => {
+    this.toggleAccountsModal();
+    this.props.navigation.navigate('AddAsset', { assetType: 'token' });
+    this.hideDrawer();
+  }
+
   onConnectHardware = () => {
     this.toggleAccountsModal();
     this.props.navigation.navigate('ConnectQRHardwareFlow');
@@ -993,6 +1004,11 @@ class DrawerView extends PureComponent {
             'AddAsset',
             'Collectible',
           ],
+        },
+        {
+          name: strings('drawer.import_tokens'),
+          icon: this.getMaterialIcon('import'),
+          action: this.onImportTokens,
         },
         {
           name:
@@ -1486,10 +1502,11 @@ class DrawerView extends PureComponent {
             onAccountChange={this.onAccountChange}
             onImportAccount={this.onImportAccount}
             onConnectHardware={this.onConnectHardware}
+            onImportTokensBlockie={this.onImportTokensBlockie}
             ticker={ticker}
           />
         </Modal>
-        {this.renderOnboardingWizard()}
+        {/* {this.renderOnboardingWizard()} */}
         <Modal
           isVisible={this.props.receiveModalVisible}
           onBackdropPress={this.toggleReceiveModal}

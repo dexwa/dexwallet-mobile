@@ -1,4 +1,4 @@
-package io.metamask;
+package com.dexwallet;
 
 import android.content.Intent;
 import android.os.Bundle;

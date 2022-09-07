@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="io.metamask"
+	package="com.dexwallet"
 	xmlns:tools="http://schemas.android.com/tools"
 >
 
@@ -105,13 +105,13 @@
 		<!-- Explicitly opt-in to safe browsing -->
 		<meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true" />
 		<!-- Branch keys -->
-		<meta-data android:name="io.branch.sdk.BranchKey" android:value="${MM_BRANCH_KEY_LIVE}" />
-		<meta-data android:name="io.branch.sdk.BranchKey.test" android:value="${MM_BRANCH_KEY_TEST}" />
+		<meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_nb57o0uCPNHusdutEBDhqnbcsshbFgbR" />
+		<meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_live_nb57o0uCPNHusdutEBDhqnbcsshbFgbR" />
 		<!-- PUSH NOTIFICATIONS -->
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_channel_name"
-		android:value="io.metamask"/>
+		android:value="com.dexwallet"/>
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_channel_description"
-		android:value="io.metamask"/>
+		android:value="com.dexwallet"/>
 		<meta-data	android:name="com.dieam.reactnativepushnotification.notification_color"
 		android:resource="@color/lightgray"/>
 		<!-- MIXPANEL -->

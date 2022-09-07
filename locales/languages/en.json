@@ -237,6 +237,7 @@
     "receive_button": "Add funds",
     "coming_soon": "Coming soon...",
     "wallet": "Home",
+    "import_tokens": "Import tokens",
     "transaction_activity": "Activity",
     "request_feature": "Request a Feature",
     "submit_feedback_message": "Choose the type of feedback to send.",
@@ -278,7 +279,7 @@
   },
   "wallet": {
     "title": "Wallet",
-    "tokens": "TOKENS",
+    "tokens": "ASSETS",
     "collectible": "Collectible",
     "collectibles": "NFTs",
     "transactions": "TRANSACTIONS",
