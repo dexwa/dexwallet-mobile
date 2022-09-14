@@ -25,8 +25,6 @@ import SyncWithExtensionSuccess from '../../Views/SyncWithExtensionSuccess';
 import DeleteWalletModal from '../../../components/UI/DeleteWalletModal';
 import WhatsNewModal from '../../UI/WhatsNewModal/WhatsNewModal';
 import Main from '../Main';
-import OptinMetrics from '../../UI/OptinMetrics';
-import MetaMaskAnimation from '../../UI/MetaMaskAnimation';
 import SimpleWebview from '../../Views/SimpleWebview';
 import SharedDeeplinkManager from '../../../core/DeeplinkManager';
 import Engine from '../../../core/Engine';
@@ -109,11 +107,11 @@ const OnboardingNav = () => (
       component={ImportFromSeed}
       options={ImportFromSeed.navigationOptions}
     />
-    <Stack.Screen
+    {/* <Stack.Screen
       name="OptinMetrics"
       component={OptinMetrics}
       options={OptinMetrics.navigationOptions}
-    />
+    /> */}
   </Stack.Navigator>
 );
 
@@ -319,20 +317,6 @@ const App = ({ userLoggedIn }) => {
       setAnimationPlayed(true);
     });
   }, [opacity]);
-
-  const renderSplash = () => {
-    if (!animationPlayed) {
-      return (
-        <MetaMaskAnimation
-          animation={animation}
-          animationName={animationName}
-          opacity={opacity}
-          onAnimationFinish={onAnimationFinished}
-        />
-      );
-    }
-    return null;
-  };
 
   const RootModalFlow = () => (
     <Stack.Navigator

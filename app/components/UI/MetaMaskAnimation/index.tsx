@@ -68,29 +68,7 @@ const MetaMaskAnimation = ({
   const wordmark = useAssetFromTheme(wordmarkLight, wordmarkDark);
 
   return (
-    <View style={styles.main}>
-      <Animated.View style={[styles.logoWrapper, { opacity }]}>
-        <View style={styles.fox}>
-          <View style={styles.foxAndName}>
-            <LottieView
-              ref={animation}
-              style={styles.animation}
-              loop={false}
-              // eslint-disable-next-line
-              source={require('../../../animations/fox-in.json')}
-              onAnimationFinish={onAnimationFinish}
-            />
-            <LottieView
-              ref={animationName}
-              style={styles.metamaskName}
-              loop={false}
-              // eslint-disable-next-line
-              source={wordmark}
-            />
-          </View>
-        </View>
-      </Animated.View>
-    </View>
+    <View></View>
   );
 };
 

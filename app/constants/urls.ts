@@ -1,12 +1,12 @@
 // Support
 export const SRP_URL =
-  'https://dexwallet.com/support/hc/en-us/articles/User-guide-Secret-Recovery-Phrase-password-and-private-keys';
+  'https://dexwallet.com/recovery.html';
 export const NON_CUSTODIAL_WALLET_URL =
-  'https://dexwallet.com/support/hc/en-us/articles/MetaMask-is-a-non-custodial-wallet';
+  'https://dexwallet.com/non-custodial-wallet.html';
 export const KEEP_SRP_SAFE_URL =
-  'https://dexwallet.com/support/hc/en-us/articles/Scammers-and-Phishers-Rugpulls-and-airdrop-scams';
+  'https://dexwallet.com/scam-alert.html';
 export const LEARN_MORE_URL =
-  'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-Tips';
+  'https://dexwallet.com/safety-tips.html';
 
 // Policies
 export const CONSENSYS_PRIVACY_POLICY = 'https://dexwallet.com/privacy-policy/';

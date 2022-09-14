@@ -76,7 +76,7 @@ const Tab = createBottomTabNavigator();
 const styles = StyleSheet.create({
   headerLogo: {
     width: 125,
-    height: 50,
+    height: 65,
   },
   hidden: {
     opacity: 0,

@@ -27,11 +27,11 @@ export default {
     },
     SUPPORTED_NETWORKS: [MAINNET, RINKEBY],
   },
-  MM_UNIVERSAL_LINK_HOST: 'dexwallet.app.link',
-  MM_DEEP_ITMS_APP_LINK: 'https://dexwallet.app.link/skAH3BaF99',
+  MM_UNIVERSAL_LINK_HOST: '8hjke.app.link/dexwallet',
+  MM_DEEP_ITMS_APP_LINK: 'https://8hjke.app.link/dexwallet/skAH3BaF99',
   SAI_ADDRESS: '0x89d24A6b4CcB1B6fAA2625fE562bDD9a23260359',
-  HOMEPAGE_URL: process.env.MM_HOMEPAGE || 'https://home.metamask.io/',
-  SHORT_HOMEPAGE_URL: 'MetaMask.io',
+  HOMEPAGE_URL: process.env.MM_HOMEPAGE || 'https://dexwallet-home.netlify.app/',
+  SHORT_HOMEPAGE_URL: 'DexWallet.io',
   ZERO_ADDRESS: '0x0000000000000000000000000000000000000000',
   USER_AGENT: Device.isAndroid()
     ? 'Mozilla/5.0 (Linux; Android 10; Android SDK built for x86 Build/OSM1.180201.023) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'
@@ -46,7 +46,7 @@ export default {
     TRANSAK_URL_STAGING: 'https://staging-global.transak.com/',
     TRANSAK_API_URL_PRODUCTION: 'https://api.transak.com/',
     TRANSAK_API_URL_STAGING: 'https://staging-api.transak.com/',
-    TRANSAK_REDIRECT_URL: 'https://metamask.io/',
+    TRANSAK_REDIRECT_URL: 'https://dexwallet.com/',
     MOONPAY_URL: 'https://buy.moonpay.com/',
     MOONPAY_URL_STAGING: 'https://buy-sandbox.moonpay.com/',
     MOONPAY_API_URL_PRODUCTION: 'https://api.moonpay.com/',
@@ -81,13 +81,13 @@ export default {
     TERMS_AND_CONDITIONS: 'https://dexwallet.com/terms-of-use/',
     PRIVACY_POLICY: 'https://dexwallet.com/privacy-policy/',
     CONNECTIVITY_ISSUES:
-      'https://dexwallet.com/support/hc/en-us/articles/360059386712',
+      'https://dexwallet.com/infura-limitations.html',
     NFT: 'https://dexwallet.com/support/hc/en-us/articles/NFT-tokens-in-DexWallet-wallet',
     SECURITY:
-        'https://dexwallet.com/support/hc/en-us/articles/Basic-Safety-Tips',
+        'https://dexwallet.com/safety-tips.html',
     TOKEN_BALANCE:
-      'https://dexwallet.com/support/hc/en-us/articles/What-to-do-when-your-balance-of-ETH-and-or-ERC20-tokens-is-incorrect-inaccurate',
-    MM_FAUCET: 'https://faucet.dexwallet.com/',
+      'https://dexwallet.com/token-balance-issues.html',
+    MM_FAUCET: 'https://goerlifaucet.com/',
   },
   ERRORS: {
     INFURA_BLOCKED_MESSAGE:
@@ -111,11 +111,11 @@ export default {
   },
   REVIEW_PROMPT: {
     HIGH_GAS_FEES:
-      'https://dexwallet.com/support/hc/en-us/articles/Why-my-gas-fees-are-so-high',
+      'https://dexwallet.com/gas-fees-high-issues.html',
     MISSING_TOKENS:
-      'https://dexwallet.com/support/hc/en-us/articles/How-to-add-unlisted-tokens-custom-tokens-in-DexWallet',
+      'https://dexwallet.com/adding-unlisted-tokens.html',
     SWAP_ISSUES:
-      'https://dexwallet.com/support/hc/en-us/articles/Error-fetching-quote',
+      'https://dexwallet.com/error-fetching-quote.html',
     SUPPORT: 'https://dexwallet.com/support/',
   },
   BUNDLE_IDS: {

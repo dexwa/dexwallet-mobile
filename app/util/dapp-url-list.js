@@ -132,12 +132,12 @@ export default [
     name: 'Marblecards',
   },
   {
-    url: 'https://metamask.io/',
-    name: 'MetaMask',
+    url: 'https://dexwallet.com/',
+    name: 'DexWallet',
   },
   {
-    url: 'https://faucet.metamask.io/',
-    name: 'MetamMask Ether Faucet (Ropsten)',
+    url: 'https://goerlifaucet.com/',
+    name: 'Faucet (Goerli)',
   },
   {
     url: 'https://www.minds.com/',

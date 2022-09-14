@@ -717,7 +717,7 @@ export function getTransparentOnboardingNavbarOptions(themeColors) {
     },
     metamaskName: {
       width: 122,
-      height: 15,
+      height: 20,
       tintColor: themeColors.text.default,
     },
   });

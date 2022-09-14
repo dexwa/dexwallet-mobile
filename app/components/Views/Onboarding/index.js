@@ -99,7 +99,15 @@ const createStyles = (colors) =>
       color: colors.text.default,
       lineHeight: 20,
     },
+    logo: {
+      marginTop: 50,
+      width: 100,
+      height: 100,
+    },
     importWrapper: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
       marginVertical: 24,
     },
     createWrapper: {
@@ -415,6 +423,7 @@ class Onboarding extends PureComponent {
           <Text style={styles.buttonDescription}>
             {strings('onboarding.import')}
           </Text>
+          <Image source={require('../../../images/dexwallet-about.png')} style={styles.logo} />
         </View>
         <View style={styles.createWrapper}>
           <View style={styles.buttonWrapper}>

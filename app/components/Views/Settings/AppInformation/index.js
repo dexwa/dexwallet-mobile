@@ -14,6 +14,7 @@ import {
   getVersion,
   getBuildNumber,
 } from 'react-native-device-info';
+import StyledButton from '../../../UI/StyledButton';
 import { fontStyles } from '../../../../styles/common';
 import PropTypes from 'prop-types';
 import { strings } from '../../../../../locales/i18n';
@@ -72,6 +73,17 @@ const createStyles = (colors) =>
       color: colors.text.alternative,
       ...fontStyles.normal,
     },
+    halfwidth: {
+      width: '50%',
+      marginRight: 5
+    },
+    buttonsView: {
+      display: 'flex',
+      flexDirection: 'row'
+    },
+    websiteButtonView: {
+      marginTop: 10,
+    }
   });
 
 const LogoImage = require('../../../../images/dexwallet-about.png'); // eslint-disable-line import/no-commonjs
@@ -174,41 +186,43 @@ export default class AppInformation extends PureComponent {
             />
             <Text style={styles.versionInfo}>{this.state.appInfo}</Text>
           </View>
-          <Text style={styles.title}>{strings('app_information.links')}</Text>
-          <View style={styles.links}>
-            <TouchableOpacity onPress={this.onPrivacyPolicy}>
-              <Text style={styles.link}>
-                {strings('app_information.privacy_policy')}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.onTermsOfUse}>
-              <Text style={styles.link}>
-                {strings('app_information.terms_of_use')}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.onAttributions}>
-              <Text style={styles.link}>
-                {strings('app_information.attributions')}
-              </Text>
-            </TouchableOpacity>
+          <View style={styles.buttonsView}>
+          <View style={styles.halfwidth}>
+          <StyledButton
+              type="confirm"
+              onPress={this.onPrivacyPolicy}
+              containerStyle={styles.syncConfirm}
+              testID={'add-network-button'}
+              >
+              {strings('app_information.privacy_policy')}
+          </StyledButton>
           </View>
+          <View style={styles.halfwidth}>
+          <StyledButton
+              type="confirm"
+              onPress={this.onTermsOfUse}
+              containerStyle={styles.syncConfirm}
+              testID={'add-network-button'}
+              >
+              {strings('app_information.terms_of_use')}
+          </StyledButton>
+
+          </View>
+
+          </View>
+          <View style={styles.websiteButtonView}>
+          <StyledButton
+type="confirm"
+onPress={this.onWebSite}
+containerStyle={styles.syncConfirm}
+testID={'add-network-button'}
+>
+{strings('app_information.web_site')}
+</StyledButton>
+</View>
           <View style={styles.division} />
           <View style={styles.links}>
-            <TouchableOpacity onPress={this.onSupportCenter}>
-              <Text style={styles.link}>
-                {strings('app_information.support_center')}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.onWebSite}>
-              <Text style={styles.link}>
-                {strings('app_information.web_site')}
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.onContactUs}>
-              <Text style={styles.link}>
-                {strings('app_information.contact_us')}
-              </Text>
-            </TouchableOpacity>
+
           </View>
         </ScrollView>
       </SafeAreaView>

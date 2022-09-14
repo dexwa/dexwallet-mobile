@@ -5,6 +5,7 @@ import {
   Dimensions,
   Animated,
   View,
+  Text,
   AppState,
   Appearance,
 } from 'react-native';
@@ -111,7 +112,7 @@ class LockScreen extends PureComponent {
       this.appState !== 'active' &&
       nextAppState === 'active'
     ) {
-      this.firstAnimation.play();
+      // this.firstAnimation.play();
       this.appState = nextAppState;
       // Avoid trying to unlock with the app in background
       this.unlockKeychain();
@@ -151,8 +152,8 @@ class LockScreen extends PureComponent {
         this.locked = false;
         await this.setState({ ready: true });
         Logger.log('Lockscreen::unlockKeychain - state: ready');
-        this.secondAnimation && this.secondAnimation.play();
-        this.animationName && this.animationName.play();
+        // this.secondAnimation && this.secondAnimation.play();
+        // this.animationName && this.animationName.play();
         Logger.log('Lockscreen::unlockKeychain - playing animations');
       } else if (this.props.passwordSet) {
         this.logOut();
@@ -189,6 +190,10 @@ class LockScreen extends PureComponent {
     }, 100);
   };
 
+  goBack = () => {
+    this.props.navigation.goBack();
+  }
+
   getStyles = () => {
     const colors = this.context.colors || mockTheme.colors;
     return createStyles(colors);
@@ -205,41 +210,29 @@ class LockScreen extends PureComponent {
     );
     const styles = this.getStyles();
 
-    if (!this.state.ready) {
-      return (
-        <LottieView
-          // eslint-disable-next-line react/jsx-no-bind
-          ref={(animation) => {
-            this.firstAnimation = animation;
-          }}
-          style={styles.animation}
-          source={require('../../../animations/bounce.json')}
-        />
-      );
-    }
-
     return (
-      <View style={styles.foxAndName}>
-        <LottieView
-          // eslint-disable-next-line react/jsx-no-bind
-          ref={(animation) => {
-            this.secondAnimation = animation;
-          }}
-          style={styles.animation}
-          loop={false}
-          source={require('../../../animations/fox-in.json')}
-          onAnimationFinish={this.onAnimationFinished}
-        />
-        <LottieView
-          // eslint-disable-next-line react/jsx-no-bind
-          ref={(animation) => {
-            this.animationName = animation;
-          }}
-          style={styles.metamaskName}
-          loop={false}
-          source={wordmark}
-        />
-      </View>
+      // <View style={styles.foxAndName}>
+      //   <LottieView
+      //     // eslint-disable-next-line react/jsx-no-bind
+      //     ref={(animation) => {
+      //       this.secondAnimation = animation;
+      //     }}
+      //     style={styles.animation}
+      //     loop={false}
+      //     source={require('../../../animations/fox-in.json')}
+      //     onAnimationFinish={this.onAnimationFinished}
+      //   />
+      //   <LottieView
+      //     // eslint-disable-next-line react/jsx-no-bind
+      //     ref={(animation) => {
+      //       this.animationName = animation;
+      //     }}
+      //     style={styles.metamaskName}
+      //     loop={false}
+      //     source={wordmark}
+      //   />
+      // </View>
+      this.onAnimationFinished()
     );
   }
 

@@ -816,22 +816,6 @@ class DrawerView extends PureComponent {
     this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_VIEW_ETHERSCAN);
   };
 
-  // submitFeedback = () => {
-  //   this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_SEND_FEEDBACK);
-  //   this.goToBrowserUrl(
-  //     'https://community.metamask.io/c/feature-requests-ideas/',
-  //     strings('drawer.request_feature'),
-  //   );
-  // };
-
-  // showHelp = () => {
-  //   this.goToBrowserUrl(
-  //     'https://support.metamask.io',
-  //     strings('drawer.dexwallet_support'),
-  //   );
-  //   this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_GET_HELP);
-  // };
-
   goToBrowserUrl(url, title) {
     this.props.navigation.navigate('Webview', {
       screen: 'SimpleWebview',
@@ -1015,7 +999,7 @@ class DrawerView extends PureComponent {
             (blockExplorer &&
               `${strings('drawer.view_in')} ${blockExplorerName}`) ||
             strings('drawer.view_in_etherscan'),
-          icon: this.getIcon('eye'),
+          icon: this.getIcon('link'),
           action: this.viewInEtherscan,
         },
         // {
@@ -1060,7 +1044,7 @@ class DrawerView extends PureComponent {
         // },
         {
           name: strings('drawer.lock'),
-          icon: this.getFeatherIcon('log-out'),
+          icon: this.getFeatherIcon('lock'),
           action: this.logout,
         },
       ],
@@ -1300,7 +1284,7 @@ class DrawerView extends PureComponent {
             >
               <View style={styles.buttonContent}>
                 <MaterialIcon
-                  name={'arrow-top-right'}
+                  name={'upload'}
                   size={22}
                   color={colors.primary.default}
                   style={styles.buttonIcon}
@@ -1318,10 +1302,10 @@ class DrawerView extends PureComponent {
             >
               <View style={styles.buttonContent}>
                 <MaterialIcon
-                  name={'keyboard-tab'}
+                  name={'download'}
                   size={22}
                   color={colors.primary.default}
-                  style={[styles.buttonIcon, styles.buttonReceive]}
+                  style={[styles.buttonIcon]}
                 />
                 <Text style={styles.buttonText}>
                   {strings('drawer.receive_button')}

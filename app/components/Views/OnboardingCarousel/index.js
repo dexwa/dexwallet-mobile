@@ -141,12 +141,12 @@ class OnboardingCarousel extends PureComponent {
 
   trackEvent = (eventArgs) => {
     InteractionManager.runAfterInteractions(async () => {
-      const metricsOptIn = await DefaultPreference.get(METRICS_OPT_IN);
-      if (metricsOptIn) {
-        AnalyticsV2.trackEvent(eventArgs);
-      } else {
+      // const metricsOptIn = await DefaultPreference.get(METRICS_OPT_IN);
+      // if (metricsOptIn) {
+        // AnalyticsV2.trackEvent(eventArgs);
+      // } else {
         this.props.saveOnboardingEvent(eventArgs);
-      }
+      // }
     });
   };
 
