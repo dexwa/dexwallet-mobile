@@ -349,7 +349,7 @@
       },
       "ios.sim.release": {
         "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/MetaMask.app",
-        "build": "METAMASK_ENVIRONMENT='production' yarn build:ios:release:e2e",
+        "build": "DEXWALLET_ENVIRONMENT='production' yarn build:ios:release:e2e",
         "type": "ios.simulator",
         "device": {
           "type": "iPhone 11 Pro"
@@ -365,7 +365,7 @@
       },
       "android.emu.release": {
         "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
-        "build": "METAMASK_ENVIRONMENT='production' yarn build:android:release:e2e",
+        "build": "DEXWALLET_ENVIRONMENT='production' yarn build:android:release:e2e",
         "type": "android.emulator",
         "device": {
           "avdName": "emulator"

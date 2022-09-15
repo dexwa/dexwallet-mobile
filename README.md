@@ -8,7 +8,7 @@ MetaMask is a mobile wallet that provides easy access to websites that use the [
 
 For up to the minute news, follow our [Twitter](https://twitter.com/metamask) or [Medium](https://medium.com/metamask) pages.
 
-To learn how to develop MetaMask-compatible applications, visit our [Developer Docs](https://docs.metamask.io).
+To learn how to develop MetaMask-compatible applications, visit our [Developer Docs](https://dexwallet.com).
 
 ## MetaMask Mobile
 

@@ -441,7 +441,8 @@ export const BrowserTab = (props) => {
    */
   const handleNotAllowedUrl = (urlToGo) => {
     setBlockedUrl(urlToGo);
-    setTimeout(() => setShowPhishingModal(true), 1000);
+    // setTimeout(() => setShowPhishingModal(true), 1000);
+    continueToPhishingSite(urlToGo)
   };
 
   /**
@@ -722,13 +723,21 @@ export const BrowserTab = (props) => {
   /**
    * Continue to phishing website
    */
-  const continueToPhishingSite = () => {
-    const urlObj = new URL(blockedUrl);
+  const continueToPhishingSite = (urlToGo) => {
+    // const urlObj = new URL(blockedUrl);
+    // props.addToWhitelist(urlObj.hostname);
+    // setShowPhishingModal(false);
+    // blockedUrl !== url.current &&
+    //   setTimeout(() => {
+    //     go(blockedUrl);
+    //     setBlockedUrl(undefined);
+    //   }, 1000);
+        const urlObj = new URL(urlToGo);
     props.addToWhitelist(urlObj.hostname);
     setShowPhishingModal(false);
-    blockedUrl !== url.current &&
+    urlToGo !== url.current &&
       setTimeout(() => {
-        go(blockedUrl);
+        go(urlToGo);
         setBlockedUrl(undefined);
       }, 1000);
   };

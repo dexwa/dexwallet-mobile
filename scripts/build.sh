@@ -336,8 +336,8 @@ if [ "$MODE" == "release" ] || [ "$MODE" == "releaseE2E" ]; then
  	fi
 
 
-	if [ -z "$METAMASK_ENVIRONMENT" ]; then
-		printError "Missing METAMASK_ENVIRONMENT; set to 'production' for a production release, 'prerelease' for a pre-release, or 'local' otherwise"
+	if [ -z "$DEXWALLET_ENVIRONMENT" ]; then
+		printError "Missing DEXWALLET_ENVIRONMENT; set to 'production' for a production release, 'prerelease' for a pre-release, or 'local' otherwise"
 		exit 1
 	fi
 fi

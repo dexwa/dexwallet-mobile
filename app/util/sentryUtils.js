@@ -2,7 +2,7 @@
 import * as Sentry from '@sentry/react-native';
 import { Dedupe, ExtraErrorData } from '@sentry/integrations';
 
-const METAMASK_ENVIRONMENT = 'production'; // eslint-disable-line dot-notation
+const DEXWALLET_ENVIRONMENT = 'production'; // eslint-disable-line dot-notation
 const SENTRY_DSN_PROD =
   'https://acd50db992874487a28e5e7e2ea9c98c@o1395217.ingest.sentry.io/6719156'; // metamask-mobile
 const SENTRY_DSN_DEV =
@@ -16,7 +16,7 @@ export const routingInstrumentation =
 // Setup sentry remote error reporting
 export function setupSentry() {
   const environment =
-    __DEV__ || !METAMASK_ENVIRONMENT ? 'development' : METAMASK_ENVIRONMENT;
+    __DEV__ || !DEXWALLET_ENVIRONMENT ? 'development' : DEXWALLET_ENVIRONMENT;
   const dsn = environment === 'production' ? SENTRY_DSN_PROD : SENTRY_DSN_DEV;
   Sentry.init({
     dsn,

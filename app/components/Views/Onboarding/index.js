@@ -303,21 +303,10 @@ class Onboarding extends PureComponent {
   onPressCreate = () => {
     const action = async () => {
       const metricsOptIn = await DefaultPreference.get(METRICS_OPT_IN);
-      if (metricsOptIn) {
         this.props.navigation.navigate('ChoosePassword', {
           [PREVIOUS_SCREEN]: ONBOARDING,
         });
         this.track(AnalyticsV2.ANALYTICS_EVENTS.WALLET_SETUP_STARTED);
-      } else {
-        this.props.navigation.navigate('OptinMetrics', {
-          onContinue: () => {
-            this.props.navigation.replace('ChoosePassword', {
-              [PREVIOUS_SCREEN]: ONBOARDING,
-            });
-            this.track(AnalyticsV2.ANALYTICS_EVENTS.WALLET_SETUP_STARTED);
-          },
-        });
-      }
     };
     this.handleExistingUser(action);
   };
@@ -332,22 +321,22 @@ class Onboarding extends PureComponent {
       return false;
     }
     const action = async () => {
-      const metricsOptIn = await DefaultPreference.get(METRICS_OPT_IN);
-      if (metricsOptIn) {
+      // const metricsOptIn = await DefaultPreference.get(METRICS_OPT_IN);
+      // if (metricsOptIn) {
         this.props.navigation.navigate('ExtensionSync', {
           [PREVIOUS_SCREEN]: ONBOARDING,
         });
         this.track(AnalyticsV2.ANALYTICS_EVENTS.WALLET_SYNC_STARTED);
-      } else {
-        this.props.navigation.navigate('OptinMetrics', {
-          onContinue: () => {
-            this.props.navigation.replace('ExtensionSync', {
-              [PREVIOUS_SCREEN]: ONBOARDING,
-            });
-            this.track(AnalyticsV2.ANALYTICS_EVENTS.WALLET_SYNC_STARTED);
-          },
-        });
-      }
+      // } else {
+      //   this.props.navigation.navigate('OptinMetrics', {
+      //     onContinue: () => {
+      //       this.props.navigation.replace('ExtensionSync', {
+      //         [PREVIOUS_SCREEN]: ONBOARDING,
+      //       });
+      //       this.track(AnalyticsV2.ANALYTICS_EVENTS.WALLET_SYNC_STARTED);
+      //     },
+      //   });
+      // }
     };
     this.handleExistingUser(action);
   };

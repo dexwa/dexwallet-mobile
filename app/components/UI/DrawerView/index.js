@@ -769,22 +769,23 @@ class DrawerView extends PureComponent {
   };
 
   logout = () => {
-    Alert.alert(
-      strings('drawer.lock_title'),
-      '',
-      [
-        {
-          text: strings('drawer.lock_cancel'),
-          onPress: () => null,
-          style: 'cancel',
-        },
-        {
-          text: strings('drawer.lock_ok'),
-          onPress: this.onPress,
-        },
-      ],
-      { cancelable: false },
-    );
+    // Alert.alert(
+    //   strings('drawer.lock_title'),
+    //   '',
+    //   [
+    //     {
+    //       text: strings('drawer.lock_cancel'),
+    //       onPress: () => null,
+    //       style: 'cancel',
+    //     },
+    //     {
+    //       text: strings('drawer.lock_ok'),
+    //       onPress: this.onPress,
+    //     },
+    //   ],
+    //   { cancelable: false },
+    // );
+    this.onPress();
     this.trackEvent(ANALYTICS_EVENT_OPTS.NAVIGATION_TAPS_LOGOUT);
   };
 
